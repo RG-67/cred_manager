@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cred Manager</string>
+    <string name="add_credential">Add Credential</string>
+</resources>

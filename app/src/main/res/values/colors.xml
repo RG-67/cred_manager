@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="charcoal">#36454F</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#008000</color>
+
+    <!-- App color resources -->
+    <color name="main">#60b7fe</color>
+    <color name="seconMain">#6EB8F4</color>
+    <color name="thirdMain">#95CBF8</color>
+
+</resources>
