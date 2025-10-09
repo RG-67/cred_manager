@@ -79,5 +79,7 @@ dependencies {
     // google truth for testing
     testImplementation(libs.truth)
     androidTestImplementation(libs.truth)
+    // BCrypt hashing library
+    implementation(libs.bcrypt)
 
 }

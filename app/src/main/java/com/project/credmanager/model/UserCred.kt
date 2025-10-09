@@ -9,8 +9,14 @@ import androidx.room.PrimaryKey
 data class UserCred(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
+    @ColumnInfo(name = "generatedUserId")
+    val generatedUserId: Int,
     @ColumnInfo(name = "userId")
     val userId: String,
+    @ColumnInfo(name = "userPhone")
+    val userPhone: Long,
+    @ColumnInfo(name = "deviceId")
+    val deviceId: String,
     @ColumnInfo(name = "title")
     val title: String,
     @ColumnInfo(name = "userName")

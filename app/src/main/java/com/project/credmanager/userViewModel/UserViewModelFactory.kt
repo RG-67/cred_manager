@@ -7,8 +7,8 @@ import com.project.credmanager.dao.UserDetailsDao
 import com.project.credmanager.model.UserCred
 
 class UserViewModelFactory(
-    private val userCredDao: UserCredDao,
-    private val userDetailsDao: UserDetailsDao
+    private val userCredDao: UserCredDao?,
+    private val userDetailsDao: UserDetailsDao?
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
@@ -16,6 +16,8 @@ class UserViewModelFactory(
             modelClass.isAssignableFrom(UserDetailsViewModel::class.java) -> UserDetailsViewModel(
                 userDetailsDao
             ) as T
+
+
             else -> throw IllegalArgumentException("Unknown viewModel class: ${modelClass.name}")
         }
     }

@@ -10,8 +10,8 @@ import com.project.credmanager.model.UserCred
 
 @Dao
 interface UserCredDao {
-    @Query("SELECT * FROM UserCred WHERE id = :userId")
-    fun getAllCred(userId: Int): LiveData<List<UserCred>>
+    @Query("SELECT * FROM UserCred WHERE generatedUserId = :generatedUserId AND userId = :userId")
+    fun getAllCred(generatedUserId: Int, userId: String): LiveData<List<UserCred>>
 
     @Insert
     suspend fun insertUserCred(userCred: UserCred)
