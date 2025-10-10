@@ -41,6 +41,28 @@ object HandleUserInput {
         return Pair("", true)
     }
 
+    fun checkProfileInput(
+        phone: String,
+        oldPass: String,
+        newPass: String,
+        conFirmPass: String
+    ): Pair<String, Boolean> {
+        if (phone.isEmpty() || phone.length < 10) {
+            return Pair("Enter valid number", false)
+        } else if (oldPass.isEmpty()) {
+            return Pair("Enter old password", false)
+        } else if (newPass.isEmpty()) {
+            return Pair("Enter new password", false)
+        } else if (conFirmPass.isEmpty()) {
+            return Pair("Enter confirm password", false)
+        } else if (oldPass == newPass || oldPass == conFirmPass) {
+            return Pair("New and old password should not same", false)
+        } else if (newPass != conFirmPass) {
+            return Pair("New and confirm password should same", false)
+        }
+        return Pair("", true)
+    }
+
     fun bcryptHash(password: String): String {
         return BCrypt.withDefaults().hashToString(12, password.toCharArray())
     }

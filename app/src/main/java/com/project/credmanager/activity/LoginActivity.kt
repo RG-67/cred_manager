@@ -87,8 +87,8 @@ class LoginActivity : AppCompatActivity() {
         val phone = binding.phone.text.toString()
         val pass = binding.password.text.toString()
         val isCheck = HandleUserInput.checkUserInput(true, phone, pass, "")
-        Loading.showLoading(this)
         if (isCheck.second) {
+            Loading.showLoading(this)
             userDetailsViewModel.getSingleUser(phone.toLong()) { user ->
                 Loading.dismissLoading()
                 if (user == null) {
@@ -103,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
                         AppPreference.setDeviceId(this, user.deviceId)
                         AppPreference.setLoginStatus(this, true)
                         startActivity(Intent(this, MainActivity::class.java))
-                        finishAffinity()
+                        finish()
                     } else {
                         Snackbar.make(
                             this,

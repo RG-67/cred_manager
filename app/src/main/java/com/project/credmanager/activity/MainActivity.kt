@@ -72,6 +72,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.profileBtn.setOnClickListener {
+            binding.drawer.closeDrawers()
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
         binding.logOutBtn.setOnClickListener {
             showLogOutAlert()
         }
@@ -179,7 +184,7 @@ class MainActivity : AppCompatActivity() {
             dialog.dismiss()
             AppPreference.setLoginStatus(this, false)
             startActivity(Intent(this, LoginActivity::class.java))
-            finishAffinity()
+            finish()
         }
         builder.setNegativeButton("Cancel") { dialog, _ ->
             dialog.dismiss()

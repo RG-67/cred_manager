@@ -5,12 +5,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.project.credmanager.dao.UserDetailsDao
 import com.project.credmanager.model.UserDetails
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.security.auth.callback.Callback
 
 class UserDetailsViewModel(private val userDetailsDao: UserDetailsDao?) : ViewModel() {
 
-    fun getAllUser(): List<UserDetails> = userDetailsDao?.getAllUser()!!
+    suspend fun getAllUser(): List<UserDetails> = userDetailsDao?.getAllUser()!!
 
     fun insertUser(userDetails: UserDetails) {
         viewModelScope.launch {

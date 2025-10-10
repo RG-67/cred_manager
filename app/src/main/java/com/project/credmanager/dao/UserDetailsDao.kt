@@ -13,7 +13,7 @@ import com.project.credmanager.model.UserDetails
 interface UserDetailsDao {
 
     @Query("SELECT * FROM UserDetails")
-    fun getAllUser(): List<UserDetails>
+    suspend fun getAllUser(): List<UserDetails>
 
     @Insert
     suspend fun insertUser(userDetails: UserDetails)
