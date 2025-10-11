@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.registerBtn.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
-            finishAffinity()
+            finish()
         }
 
         binding.loginBtn.setOnClickListener {
@@ -103,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
                         AppPreference.setDeviceId(this, user.deviceId)
                         AppPreference.setLoginStatus(this, true)
                         startActivity(Intent(this, MainActivity::class.java))
-                        finish()
+                        finishAffinity()
                     } else {
                         Snackbar.make(
                             this,

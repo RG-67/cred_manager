@@ -101,7 +101,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun showLoginPage() {
         startActivity(Intent(this, LoginActivity::class.java))
-        finish()
+        finishAffinity()
     }
 
 

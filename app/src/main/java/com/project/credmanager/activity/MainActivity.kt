@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
     private fun setAdapter() {
         userCredAdapter = UserCredAdapter(this, credList,
             edtBtn = { edtCred, _ ->
+                binding.searchCred.setText("")
                 val intent = Intent(this, AddCredActivity::class.java)
                 intent.putExtra("for", "edit")
                 intent.putExtra("id", edtCred.id.toString())
@@ -144,6 +145,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showAlert(cred: UserCred, position: Int) {
+        binding.searchCred.setText("")
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Alert")
         builder.setIcon(R.drawable.logo)
