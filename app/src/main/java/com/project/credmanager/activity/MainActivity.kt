@@ -145,12 +145,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showAlert(cred: UserCred, position: Int) {
-        binding.searchCred.setText("")
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Alert")
         builder.setIcon(R.drawable.logo)
         builder.setMessage("You sure to remove ?")
         builder.setPositiveButton("Ok") { dialog, _ ->
+            binding.searchCred.setText("")
             val userCred = UserCred(
                 cred.id,
                 cred.generatedUserId,

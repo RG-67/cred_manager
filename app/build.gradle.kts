@@ -79,7 +79,13 @@ dependencies {
     // google truth for testing
     testImplementation(libs.truth)
     androidTestImplementation(libs.truth)
-    // BCrypt hashing library
+    // bcrypt hashing library
     implementation(libs.bcrypt)
+    // retrofit
+    implementation(libs.retrofit)
+    // json converter
+    implementation(libs.converter.gson)
+    // okhttp logging interceptor
+    implementation(libs.logging.interceptor)
 
 }
