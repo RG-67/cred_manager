@@ -10,6 +10,7 @@ object ApiConstants {
     const val getUserByPhone = "user/getUserByPhone"
     const val updateUser = "user/updateUser"
 
+
     /*user cred api*/
     const val getAllCred = "userCred/getAllCred"
     const val insertUserCred = "userCred/insertUserCred"
