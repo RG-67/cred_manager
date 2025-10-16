@@ -11,20 +11,64 @@ import retrofit2.Response
 
 class UserDetailsRepo(private val apiInterface: ApiInterface) {
 
-    suspend fun getAllUser(): List<GetAllUserRes> {
-        return apiInterface.getAllUser()
+    suspend fun getAllUser(): Result<GetAllUserRes> {
+        return try {
+            val response = apiInterface.getAllUser()
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 
-    suspend fun insertUser(insertUserReq: InsertUserReq): Response<InsertUserRes> {
-        return apiInterface.insertUser(insertUserReq)
+    suspend fun insertUser(insertUserReq: InsertUserReq): Result<InsertUserRes> {
+        return try {
+            val response = apiInterface.insertUser(insertUserReq)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(e)
+        }
     }
 
-    suspend fun getUserByPhone(phone: String): Response<GetUserByPhoneRes> {
-        return apiInterface.getUserByPhone(phone)
+    suspend fun getUserByPhone(phone: String): Result<GetUserByPhoneRes> {
+        return try {
+            val response = apiInterface.getUserByPhone(phone)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
-    suspend fun updateUser(updateUserReq: UpdateUserReq): Response<UpdateUserRes> {
-        return apiInterface.updateUser(updateUserReq)
+    suspend fun updateUser(updateUserReq: UpdateUserReq): Result<UpdateUserRes> {
+        return try {
+            val response = apiInterface.updateUser(updateUserReq)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
 }

@@ -15,23 +15,67 @@ class UserCredRepo(private val apiInterface: ApiInterface) {
     suspend fun getAllUserCred(
         generatedUserId: BigInteger,
         userId: String
-    ): Response<GetAllCredRes> {
-        return apiInterface.getAllUserCred(generatedUserId, userId)
+    ): Result<GetAllCredRes> {
+        return try {
+            val response = apiInterface.getAllUserCred(generatedUserId, userId)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
-    suspend fun insertUserCred(insertUserCredReq: InsertUserCredReq): Response<InsertUserCredRes> {
-        return apiInterface.insertUserCred(insertUserCredReq)
+    suspend fun insertUserCred(insertUserCredReq: InsertUserCredReq): Result<InsertUserCredRes> {
+        return try {
+            val response = apiInterface.insertUserCred(insertUserCredReq)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
     suspend fun updateUserCred(
         map: HashMap<String, String>,
         updateUserCredReq: UpdateUserCredReq
-    ): Response<UpdateUserCredRes> {
-        return apiInterface.updateUserCred(map, updateUserCredReq)
+    ): Result<UpdateUserCredRes> {
+        return try {
+            val response = apiInterface.updateUserCred(map, updateUserCredReq)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
-    suspend fun deleteUserCred(map: HashMap<String, String>): Response<DeleteUserCredRes> {
-        return apiInterface.deleteUserCred(map)
+    suspend fun deleteUserCred(map: HashMap<String, String>): Result<DeleteUserCredRes> {
+        return try {
+            val response = apiInterface.deleteUserCred(map)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                Result.failure(Exception("Error: ${response.code()}"))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
     }
 
 }

@@ -20,6 +20,10 @@ import com.project.credmanager.databinding.ActivityLoginBinding
 import com.project.credmanager.databinding.ActivityMainBinding
 import com.project.credmanager.db.CredDB
 import com.project.credmanager.model.UserDetails
+import com.project.credmanager.network.ApiClient
+import com.project.credmanager.network.repository.UserDetailsRepo
+import com.project.credmanager.userViewModel.UserApiViewModel.UserApiViewModelFactory
+import com.project.credmanager.userViewModel.UserApiViewModel.UserDetailsApiViewModel
 import com.project.credmanager.userViewModel.UserDetailsViewModel
 import com.project.credmanager.userViewModel.UserViewModel
 import com.project.credmanager.userViewModel.UserViewModelFactory
@@ -31,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var userDetailsViewModel: UserDetailsViewModel
+    private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +53,12 @@ class LoginActivity : AppCompatActivity() {
         val factory = UserViewModelFactory(null, userDetailsDao)
         userDetailsViewModel = ViewModelProvider(this, factory)[UserDetailsViewModel::class.java]
 
+        val apiInterface = ApiClient.apiInterface
+        val userDetailsRepo = UserDetailsRepo(apiInterface)
+        userDetailsApiViewModel = ViewModelProvider.create(
+            this,
+            UserApiViewModelFactory(userDetailsRepo, null)
+        )[UserDetailsApiViewModel::class.java]
 
 
         binding.registerBtn.setOnClickListener {

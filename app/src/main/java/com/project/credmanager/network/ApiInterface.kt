@@ -12,6 +12,7 @@ import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.Up
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserRes
+import com.project.credmanager.model.UserDetailsApiModel.UserDetailsData
 import com.project.credmanager.utils.ApiConstants
 import retrofit2.Response
 import retrofit2.http.Body
@@ -23,11 +24,12 @@ import retrofit2.http.Query
 import retrofit2.http.QueryMap
 import java.math.BigInteger
 
+
 interface ApiInterface {
 
     /*User details api*/
     @GET(ApiConstants.getAllUser)
-    suspend fun getAllUser(): List<GetAllUserRes>
+    suspend fun getAllUser(): Response<GetAllUserRes>
 
     @POST(ApiConstants.insertUser)
     suspend fun insertUser(@Body insertUserReq: InsertUserReq): Response<InsertUserRes>
