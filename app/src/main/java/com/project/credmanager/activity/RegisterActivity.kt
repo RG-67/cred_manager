@@ -1,5 +1,6 @@
 package com.project.credmanager.activity
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
@@ -20,6 +21,8 @@ import com.project.credmanager.userViewModel.UserDetailsViewModel
 import com.project.credmanager.userViewModel.UserViewModelFactory
 import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
+import com.project.credmanager.utils.NetworkDialog
+import com.project.credmanager.utils.NetworkMonitor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -28,11 +31,22 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var userDetailsViewModel: UserDetailsViewModel
+    private var networkDialog: AlertDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        NetworkMonitor.isConnected.observe(this) { isConnected ->
+            if (!isConnected) {
+                if (networkDialog == null || !networkDialog!!.isShowing)
+                    networkDialog = NetworkDialog.showNetworkDialog(this)
+            } else {
+                networkDialog?.dismiss()
+                networkDialog = null
+            }
+        }
 
         val database = CredDB.getDatabase(this)
         val userDetailsDao = database.userDetailsDao()
@@ -80,7 +94,11 @@ class RegisterActivity : AppCompatActivity() {
                             deviceId = deviceId
                         )
                         userDetailsViewModel.insertUser(userDetails)
-                        Toast.makeText(this@RegisterActivity, "User registered successfully", Toast.LENGTH_SHORT)
+                        Toast.makeText(
+                            this@RegisterActivity,
+                            "User registered successfully",
+                            Toast.LENGTH_SHORT
+                        )
                             .show()
                         showLoginPage()
                     } else {

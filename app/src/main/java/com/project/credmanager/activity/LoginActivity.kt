@@ -1,5 +1,6 @@
 package com.project.credmanager.activity
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -30,6 +31,8 @@ import com.project.credmanager.userViewModel.UserViewModelFactory
 import com.project.credmanager.utils.AppPreference
 import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
+import com.project.credmanager.utils.NetworkDialog
+import com.project.credmanager.utils.NetworkMonitor
 
 class LoginActivity : AppCompatActivity() {
 
@@ -37,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var userDetailsViewModel: UserDetailsViewModel
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
+    private var networkDialog: AlertDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +50,16 @@ class LoginActivity : AppCompatActivity() {
         if (AppPreference.getLoginStatus(this) && AppPreference.getGeneratedUserId(this) != "0") {
             startActivity(Intent(this, MainActivity::class.java))
             finishAffinity()
+        }
+
+        NetworkMonitor.isConnected.observe(this) { isConnected ->
+            if (!isConnected) {
+                if (networkDialog == null || !networkDialog!!.isShowing) networkDialog =
+                    NetworkDialog.showNetworkDialog(this)
+            } else {
+                networkDialog?.dismiss()
+                networkDialog = null
+            }
         }
 
         val database = CredDB.getDatabase(this)
