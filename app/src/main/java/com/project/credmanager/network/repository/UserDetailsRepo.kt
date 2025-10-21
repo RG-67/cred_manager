@@ -1,5 +1,6 @@
 package com.project.credmanager.network.repository
 
+import android.util.Log
 import com.project.credmanager.model.UserDetailsApiModel.GetAllUserRes
 import com.project.credmanager.model.UserDetailsApiModel.GetUserByPhoneRes
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserReq
@@ -7,6 +8,7 @@ import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.Insert
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserRes
 import com.project.credmanager.network.ApiInterface
+import org.json.JSONObject
 import retrofit2.Response
 
 class UserDetailsRepo(private val apiInterface: ApiInterface) {
@@ -19,7 +21,9 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Log.d("ErrorBody: ", jsonObject.optString("msg"))
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(e)

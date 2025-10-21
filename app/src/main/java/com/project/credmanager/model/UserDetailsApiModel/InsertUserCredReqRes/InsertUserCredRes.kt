@@ -10,7 +10,6 @@ data class UserCred(
     val description: String,
     val deviceid: String,
     val generateduserid: Int,
-    val id: Int,
     val internal_id: Int,
     val password: String,
     val title: String,

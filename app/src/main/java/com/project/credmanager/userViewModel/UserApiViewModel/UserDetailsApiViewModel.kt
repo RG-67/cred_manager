@@ -1,5 +1,6 @@
 package com.project.credmanager.userViewModel.UserApiViewModel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -14,7 +15,10 @@ import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.Update
 import com.project.credmanager.model.UserDetailsApiModel.UserDetails
 import com.project.credmanager.model.UserDetailsApiModel.UserDetailsData
 import com.project.credmanager.network.repository.UserDetailsRepo
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.invoke
 import kotlinx.coroutines.launch
+import okhttp3.Dispatcher
 import retrofit2.Response
 
 
@@ -23,8 +27,8 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
     private val _users = MutableLiveData<List<UserDetailsData>>()
     val users: LiveData<List<UserDetailsData>> = _users
 
-    private val _insertedUser = MutableLiveData<InsertUserData>()
-    val insertedUser: LiveData<InsertUserData> = _insertedUser
+    private val _insertedUser = MutableLiveData<InsertUserRes>()
+    val insertedUser: LiveData<InsertUserRes> = _insertedUser
 
     private val _getUserByPhone = MutableLiveData<UserDetails>()
     val getUserByPhone: LiveData<UserDetails> = _getUserByPhone
@@ -53,7 +57,7 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
         viewModelScope.launch {
             val result = userDetailsRepo!!.insertUser(insertUserReq)
             result.onSuccess { res ->
-                if (res.status) _insertedUser.value = res.data
+                if (res.status) _insertedUser.value = res
                 else _error.value = res.msg
             }.onFailure { throwable ->
                 _error.value = throwable.message ?: "Unknown error from insert user response"
