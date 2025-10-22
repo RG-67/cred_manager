@@ -54,7 +54,7 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
                 val jsonObject = JSONObject(response.errorBody()?.string().toString())
-                Result.failure(Exception(jsonObject.optString("")))
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))

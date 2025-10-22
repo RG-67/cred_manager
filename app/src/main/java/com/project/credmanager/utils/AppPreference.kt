@@ -9,6 +9,7 @@ object AppPreference {
     const val USERID = "userID"
     const val USER_PHONE = "userPhone"
     const val DEVICE_ID = "deviceId"
+    const val INTERNAL_ID = "internalId"
     const val LOGIN_STATUS = "loginStatus"
 
     private fun putString(context: Context, key: String, value: String) {
@@ -65,6 +66,14 @@ object AppPreference {
 
     fun getDeviceId(context: Context): String? {
         return getString(context, DEVICE_ID)
+    }
+
+    fun setInternalId(context: Context, value: String) {
+        putString(context, INTERNAL_ID, value)
+    }
+
+    fun getInternalId(context: Context): String? {
+        return getString(context, INTERNAL_ID)
     }
 
     fun setLoginStatus(context: Context, value: Boolean) {

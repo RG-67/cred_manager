@@ -37,7 +37,8 @@ import com.project.credmanager.utils.NetworkMonitor
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-//    private lateinit var userDetailsViewModel: UserDetailsViewModel
+
+    //    private lateinit var userDetailsViewModel: UserDetailsViewModel
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     private var networkDialog: AlertDialog? = null
@@ -84,6 +85,30 @@ class LoginActivity : AppCompatActivity() {
             handleLogin()
         }
 
+        userDetailsApiViewModel.getUserByPhone.observe(this) { user ->
+            Loading.showLoading(this)
+            val isPassCheck =
+                HandleUserInput.verifyPassword(binding.password.text.toString(), user.password)
+            if (isPassCheck) {
+                Loading.dismissLoading()
+                AppPreference.setGeneratedUserId(this, user.id.toString())
+                AppPreference.setUserId(this, user.userid)
+                AppPreference.setUserPhone(this, user.userphone.toString())
+                AppPreference.setDeviceId(this, user.deviceid)
+                AppPreference.setDeviceId(this, user.internal_id.toString())
+                AppPreference.setLoginStatus(this, true)
+                startActivity(Intent(this, MainActivity::class.java))
+                finishAffinity()
+            } else {
+                Loading.dismissLoading()
+                Snackbar.make(this, binding.root, "Wrong password", Snackbar.LENGTH_SHORT).show()
+            }
+        }
+
+        userDetailsApiViewModel.errorUsersByPhone.observe(this) { msg ->
+            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+        }
+
         binding.phone.addTextChangedListener(textWatcher)
         binding.password.addTextChangedListener(textWatcher)
 
@@ -99,11 +124,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         override fun afterTextChanged(p0: Editable?) {
-            if (p0.toString().isNotEmpty()) {
+            /*if (p0.toString().isNotEmpty()) {
                 Handler().postDelayed({
                     HandleUserInput.hideKeyboard(this@LoginActivity, binding.root)
                 }, 5000)
-            }
+            }*/
         }
 
     }
@@ -113,9 +138,8 @@ class LoginActivity : AppCompatActivity() {
         val pass = binding.password.text.toString()
         val isCheck = HandleUserInput.checkUserInput(true, phone, pass, "")
         if (isCheck.second) {
-            Loading.showLoading(this)
             userDetailsApiViewModel.getUserByPhone(phone)
-            userDetailsViewModel.getSingleUser(phone.toLong()) { user ->
+            /*userDetailsViewModel.getSingleUser(phone.toLong()) { user ->
                 Loading.dismissLoading()
                 if (user == null) {
                     Snackbar.make(this, binding.root, "User not found", Snackbar.LENGTH_SHORT)
@@ -139,7 +163,7 @@ class LoginActivity : AppCompatActivity() {
                         ).show()
                     }
                 }
-            }
+            }*/
         } else {
             Snackbar.make(this, binding.root, isCheck.first, Snackbar.LENGTH_SHORT).show()
         }
