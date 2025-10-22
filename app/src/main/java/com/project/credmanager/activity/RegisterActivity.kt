@@ -92,8 +92,11 @@ class RegisterActivity : AppCompatActivity() {
 
         userDetailsApiViewModel.users.observe(this) { user ->
             Loading.showLoading(this)
-            val isPhoneExists = user.any {
-                it.userphone == binding.phone.text.toString().toLongOrNull()
+            var isPhoneExists = false
+            if (user.isNotEmpty()) {
+                isPhoneExists = user.any {
+                    it.userphone == binding.phone.text.toString().toLongOrNull()
+                }
             }
             if (!isPhoneExists) {
                 insertUser(binding.password.text.toString())
@@ -123,7 +126,13 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        userDetailsApiViewModel.error.observe(this) { msg ->
+        userDetailsApiViewModel.errorUsers.observe(this) { msg ->
+            Loading.dismissLoading()
+            binding.registerBtn.isEnabled = true
+            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+        }
+
+        userDetailsApiViewModel.errorInsertUsers.observe(this) { msg ->
             Loading.dismissLoading()
             binding.registerBtn.isEnabled = true
             Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()

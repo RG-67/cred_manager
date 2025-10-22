@@ -22,7 +22,6 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
                 val jsonObject = JSONObject(response.errorBody()?.string().toString())
-                Log.d("ErrorBody: ", jsonObject.optString("msg"))
                 Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
@@ -38,7 +37,8 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(e)
@@ -53,7 +53,8 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))

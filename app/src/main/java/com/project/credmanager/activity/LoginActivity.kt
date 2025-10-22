@@ -37,7 +37,7 @@ import com.project.credmanager.utils.NetworkMonitor
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var userDetailsViewModel: UserDetailsViewModel
+//    private lateinit var userDetailsViewModel: UserDetailsViewModel
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     private var networkDialog: AlertDialog? = null
@@ -62,10 +62,10 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        val database = CredDB.getDatabase(this)
+        /*val database = CredDB.getDatabase(this)
         val userDetailsDao = database.userDetailsDao()
         val factory = UserViewModelFactory(null, userDetailsDao)
-        userDetailsViewModel = ViewModelProvider(this, factory)[UserDetailsViewModel::class.java]
+        userDetailsViewModel = ViewModelProvider(this, factory)[UserDetailsViewModel::class.java]*/
 
         val apiInterface = ApiClient.apiInterface
         val userDetailsRepo = UserDetailsRepo(apiInterface)
@@ -114,6 +114,7 @@ class LoginActivity : AppCompatActivity() {
         val isCheck = HandleUserInput.checkUserInput(true, phone, pass, "")
         if (isCheck.second) {
             Loading.showLoading(this)
+            userDetailsApiViewModel.getUserByPhone(phone)
             userDetailsViewModel.getSingleUser(phone.toLong()) { user ->
                 Loading.dismissLoading()
                 if (user == null) {
