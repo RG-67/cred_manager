@@ -8,6 +8,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -16,11 +17,18 @@ import com.project.credmanager.adapter.UserCredAdapter
 import com.project.credmanager.databinding.ActivityMainBinding
 import com.project.credmanager.db.CredDB
 import com.project.credmanager.model.UserCred
+import com.project.credmanager.model.UserDetailsApiModel.InsertUserCredReqRes.InsertUserCredReq
+import com.project.credmanager.network.ApiClient
+import com.project.credmanager.network.ApiInterface
+import com.project.credmanager.network.repository.UserCredRepo
+import com.project.credmanager.userViewModel.UserApiViewModel.UserApiViewModelFactory
+import com.project.credmanager.userViewModel.UserApiViewModel.UserCredApiViewModel
 import com.project.credmanager.userViewModel.UserViewModel
 import com.project.credmanager.userViewModel.UserViewModelFactory
 import com.project.credmanager.utils.AppPreference
 import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
+import com.project.credmanager.utils.NetworkMonitor
 import kotlinx.serialization.descriptors.buildSerialDescriptor
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var userViewModel: UserViewModel
     private lateinit var userCredAdapter: UserCredAdapter
+    private lateinit var userCredApiViewModel: UserCredApiViewModel
     private val credList = ArrayList<UserCred>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,15 +44,118 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val userCredRepo = UserCredRepo(ApiClient.apiInterface)
+        userCredApiViewModel = ViewModelProvider.create(
+            this,
+            UserApiViewModelFactory(null, userCredRepo)
+        )[UserCredApiViewModel::class.java]
+
         val database = CredDB.getDatabase(this)
         val userCredDao = database.userCredDao()
         val factory = UserViewModelFactory(userCredDao, null)
         userViewModel = ViewModelProvider(this, factory)[UserViewModel::class.java]
 
+
+        userCredApiViewModel.allCred.observe(this) { cred ->
+            if (cred.isNotEmpty() && credList.size == 0) {
+                Loading.showLoading(this)
+                for (element in cred) {
+                    val userCred = UserCred(
+                        0,
+                        generatedUserId = AppPreference.getGeneratedUserId(this)!!.toInt(),
+                        userId = AppPreference.getUserId(this)!!,
+                        userPhone = AppPreference.getUserPhone(this)!!.toLong(),
+                        deviceId = AppPreference.getDeviceId(this)!!,
+                        title = element.title,
+                        userName = element.username,
+                        password = element.password,
+                        description = element.description
+                    )
+                    userViewModel.insertUserCred(userCred)
+                }
+                Loading.dismissLoading()
+            } else if (cred.isEmpty() && credList.size > 0) {
+                Loading.showLoading(this)
+                for (element in credList) {
+                    val userCred = InsertUserCredReq(
+                        description = element.description,
+                        deviceId = element.deviceId,
+                        generatedUserId = AppPreference.getInternalId(this)!!.toInt(),
+                        password = element.password,
+                        title = element.title,
+                        userId = element.userId,
+                        userName = element.userName,
+                        userPhone = element.userPhone,
+                        localCredId = element.id
+                    )
+                    userCredApiViewModel.insertUserCred(userCred)
+                }
+                Loading.dismissLoading()
+            } else if (cred.isNotEmpty() && credList.size > 0) {
+//                Add api items missing from local database
+                for (apiData in cred) {
+                    val isItemExists = credList.any { localItem ->
+                        apiData.title == localItem.title &&
+                                apiData.description == localItem.description &&
+                                apiData.username == localItem.userName &&
+                                apiData.password == localItem.password
+                    }
+                    if (!isItemExists) {
+                        val newUserCred = UserCred(
+                            0,
+                            generatedUserId = AppPreference.getGeneratedUserId(this)!!.toInt(),
+                            userId = AppPreference.getUserId(this)!!,
+                            userPhone = AppPreference.getUserPhone(this)!!.toLong(),
+                            deviceId = AppPreference.getDeviceId(this)!!,
+                            title = apiData.title,
+                            userName = apiData.username,
+                            password = apiData.password,
+                            description = apiData.description
+                        )
+                        userViewModel.insertUserCred(newUserCred)
+                    }
+                }
+
+//                Add local database items missing from api items
+                for (localDbItem in credList) {
+                    val isItemExists = cred.any { apiItem ->
+
+                    }
+                }
+
+            }
+        }
+
+        userCredApiViewModel.allCredError.observe(this) { msg ->
+            Toast.makeText(this@MainActivity, msg, Toast.LENGTH_SHORT).show()
+        }
+
+        userCredApiViewModel.insertedCred.observe(this) { cred ->
+
+        }
+
+        userCredApiViewModel.insertedCredError.observe(this) { msg ->
+//            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        }
+
+
         clickMethod()
         getCreds()
         setAdapter()
 
+        NetworkMonitor.isConnected.observe(this) { isConnected ->
+            if (isConnected) {
+                syncData()
+            }
+        }
+
+    }
+
+    private fun syncData() {
+        userCredApiViewModel.getAllUserCred(
+            AppPreference.getInternalId(this)!!.toBigInteger(),
+            AppPreference.getUserId(this)!!
+        )
     }
 
 

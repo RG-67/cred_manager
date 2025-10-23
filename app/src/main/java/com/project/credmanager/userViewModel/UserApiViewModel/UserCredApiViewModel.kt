@@ -18,28 +18,38 @@ class UserCredApiViewModel(private val userCredRepo: UserCredRepo?) : ViewModel(
     private val _allCred = MutableLiveData<List<Credential>>()
     val allCred: LiveData<List<Credential>> = _allCred
 
+    private val _allCredError = MutableLiveData<String>()
+    val allCredError: LiveData<String> = _allCredError
+
     private val _insertedCred = MutableLiveData<UserCred>()
     val insertedCred: LiveData<UserCred> = _insertedCred
+
+    private val _insertedCredError = MutableLiveData<String>()
+    val insertedCredError: LiveData<String> = _insertedCredError
 
     private val _updatedCred =
         MutableLiveData<com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UserCred>()
     val updatedCred: LiveData<com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UserCred> =
         _updatedCred
 
+    private val _updateCredError = MutableLiveData<String>()
+    val updateCredError: LiveData<String> = _updateCredError
+
     private val _deletedCred = MutableLiveData<String>()
     val deletedCred: LiveData<String> = _deletedCred
 
-    private val _error = MutableLiveData<String>()
-    val error: LiveData<String> = _error
+    private val _deleteCredError = MutableLiveData<String>()
+    val deleteCredError: LiveData<String> = _deleteCredError
+
 
     fun getAllUserCred(generatedUserId: BigInteger, userId: String) {
         viewModelScope.launch {
             val response = userCredRepo!!.getAllUserCred(generatedUserId, userId)
             response.onSuccess { res ->
                 if (res.status) _allCred.value = res.data
-                else _error.value = res.msg
+                else _allCredError.value = res.msg
             }.onFailure { throwable ->
-                _error.value = throwable.message ?: "Unknown error from getAllUserCred response"
+                _allCredError.value = throwable.message ?: "Unknown error from getAllUserCred response"
             }
         }
     }
@@ -49,9 +59,9 @@ class UserCredApiViewModel(private val userCredRepo: UserCredRepo?) : ViewModel(
             val response = userCredRepo!!.insertUserCred(insertUserCredReq)
             response.onSuccess { res ->
                 if (res.status) _insertedCred.value = res.data
-                else _error.value = res.msg
+                else _insertedCredError.value = res.msg
             }.onFailure { throwable ->
-                _error.value = throwable.message ?: "Unknown error from insertUserCred response"
+                _insertedCredError.value = throwable.message ?: "Unknown error from insertUserCred response"
             }
         }
     }
@@ -61,9 +71,9 @@ class UserCredApiViewModel(private val userCredRepo: UserCredRepo?) : ViewModel(
             val response = userCredRepo!!.updateUserCred(map, updateUserCredReq)
             response.onSuccess { res ->
                 if (res.status) _updatedCred.value = res.data
-                else _error.value = res.msg
+                else _updateCredError.value = res.msg
             }.onFailure { throwable ->
-                _error.value = throwable.message ?: "Unknown error from updateUserCred response"
+                _updateCredError.value = throwable.message ?: "Unknown error from updateUserCred response"
             }
         }
     }
@@ -73,9 +83,9 @@ class UserCredApiViewModel(private val userCredRepo: UserCredRepo?) : ViewModel(
             val response = userCredRepo!!.deleteUserCred(map)
             response.onSuccess { res ->
                 if (res.status) _deletedCred.value = res.msg
-                else _error.value = res.msg
+                else _deleteCredError.value = res.msg
             }.onFailure { throwable ->
-                _error.value = throwable.message ?: "Unknown error from deletedCred response"
+                _deleteCredError.value = throwable.message ?: "Unknown error from deletedCred response"
             }
         }
     }

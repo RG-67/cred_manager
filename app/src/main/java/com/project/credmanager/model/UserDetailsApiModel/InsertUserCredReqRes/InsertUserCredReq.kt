@@ -8,5 +8,6 @@ data class InsertUserCredReq(
     val title: String,
     val userId: String,
     val userName: String,
-    val userPhone: Long
+    val userPhone: Long,
+    val localCredId: Int
 )

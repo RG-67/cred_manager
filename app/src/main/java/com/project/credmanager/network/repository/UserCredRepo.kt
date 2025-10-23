@@ -7,6 +7,7 @@ import com.project.credmanager.model.UserDetailsApiModel.InsertUserCredReqRes.In
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredRes
 import com.project.credmanager.network.ApiInterface
+import org.json.JSONObject
 import retrofit2.Response
 import java.math.BigInteger
 
@@ -23,7 +24,8 @@ class UserCredRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))
@@ -38,7 +40,8 @@ class UserCredRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))
@@ -56,7 +59,8 @@ class UserCredRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))
@@ -71,11 +75,13 @@ class UserCredRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))
         }
     }
+
 
 }

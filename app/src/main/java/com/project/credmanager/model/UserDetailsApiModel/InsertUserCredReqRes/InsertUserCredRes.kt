@@ -15,5 +15,6 @@ data class UserCred(
     val title: String,
     val userid: String,
     val username: String,
-    val userphone: Long
+    val userphone: Long,
+    val localCredId: Int
 )

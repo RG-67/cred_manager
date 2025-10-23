@@ -2,8 +2,8 @@ package com.project.credmanager.utils
 
 object ApiConstants {
 
-    //    const val BASE_URL = "http://192.168.1.52:3000/app/v1/"
-    const val BASE_URL = "http://192.168.0.105:3000/app/v1/"
+    const val BASE_URL = "http://192.168.1.52:3000/app/v1/"
+//    const val BASE_URL = "http://192.168.0.105:3000/app/v1/"
 
     /*user details api*/
     const val getAllUser = "user/getAllUser"

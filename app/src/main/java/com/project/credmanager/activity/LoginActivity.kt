@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
-    //    private lateinit var userDetailsViewModel: UserDetailsViewModel
+//    private lateinit var userDetailsViewModel: UserDetailsViewModel
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     private var networkDialog: AlertDialog? = null
@@ -91,11 +91,11 @@ class LoginActivity : AppCompatActivity() {
                 HandleUserInput.verifyPassword(binding.password.text.toString(), user.password)
             if (isPassCheck) {
                 Loading.dismissLoading()
-                AppPreference.setGeneratedUserId(this, user.id.toString())
+                AppPreference.setGeneratedUserId(this, user.internal_id.toString())
                 AppPreference.setUserId(this, user.userid)
                 AppPreference.setUserPhone(this, user.userphone.toString())
                 AppPreference.setDeviceId(this, user.deviceid)
-                AppPreference.setDeviceId(this, user.internal_id.toString())
+                AppPreference.setInternalId(this, user.internal_id.toString())
                 AppPreference.setLoginStatus(this, true)
                 startActivity(Intent(this, MainActivity::class.java))
                 finishAffinity()
