@@ -18,6 +18,7 @@ import com.project.credmanager.databinding.ActivityMainBinding
 import com.project.credmanager.db.CredDB
 import com.project.credmanager.model.UserCred
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserCredReqRes.InsertUserCredReq
+import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredReq
 import com.project.credmanager.network.ApiClient
 import com.project.credmanager.network.ApiInterface
 import com.project.credmanager.network.repository.UserCredRepo
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val userCredRepo = UserCredRepo(ApiClient.apiInterface)
-        userCredApiViewModel = ViewModelProvider.create(
+        userCredApiViewModel = ViewModelProvider(
             this,
             UserApiViewModelFactory(null, userCredRepo)
         )[UserCredApiViewModel::class.java]
@@ -119,10 +120,52 @@ class MainActivity : AppCompatActivity() {
 //                Add local database items missing from api items
                 for (localDbItem in credList) {
                     val isItemExists = cred.any { apiItem ->
-
+                        localDbItem.title == apiItem.title &&
+                                localDbItem.description == apiItem.description &&
+                                localDbItem.userName == apiItem.username &&
+                                localDbItem.password == apiItem.password
+                    }
+                    if (!isItemExists) {
+                        val userCred = InsertUserCredReq(
+                            description = localDbItem.description,
+                            deviceId = localDbItem.deviceId,
+                            generatedUserId = AppPreference.getInternalId(this)!!.toInt(),
+                            password = localDbItem.password,
+                            title = localDbItem.title,
+                            userId = localDbItem.userId,
+                            userName = localDbItem.userName,
+                            userPhone = localDbItem.userPhone,
+                            localCredId = localDbItem.id
+                        )
+                        userCredApiViewModel.insertUserCred(userCred)
                     }
                 }
+            } else if (cred.size == credList.size) {
+                for (localDbItem in credList) {
+                    val isItemSame = cred.any { apiItem ->
+                        localDbItem.title == apiItem.title ||
+                                localDbItem.description != apiItem.description ||
+                                localDbItem.userName != apiItem.username ||
+                                localDbItem.password != apiItem.password
+                    }
+                    if (!isItemSame) {
+                        val map = HashMap<String, String>()
+                        map["internalId"] = AppPreference.getInternalId(this).toString()
+                        map["generatedUserId"] = AppPreference.getGeneratedUserId(this).toString()
+                        map["userId"] = AppPreference.getUserId(this).toString()
+                        map["localCredId"] = localDbItem.id.toString()
 
+                        val updateUserCredReq = UpdateUserCredReq(
+                            description = localDbItem.description,
+                            deviceId = localDbItem.deviceId,
+                            password = localDbItem.password,
+                            title = localDbItem.title,
+                            userName = localDbItem.userName,
+                            userPhone = localDbItem.userPhone
+                        )
+                        userCredApiViewModel.updateUserCred(map, updateUserCredReq)
+                    }
+                }
             }
         }
 
@@ -136,6 +179,14 @@ class MainActivity : AppCompatActivity() {
 
         userCredApiViewModel.insertedCredError.observe(this) { msg ->
 //            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        }
+
+        userCredApiViewModel.updatedCred.observe(this) { cred ->
+
+        }
+
+        userCredApiViewModel.updateCredError.observe(this) { msg ->
+
         }
 
 

@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
 
         val apiInterface = ApiClient.apiInterface
         val userDetailsRepo = UserDetailsRepo(apiInterface)
-        userDetailsApiViewModel = ViewModelProvider.create(
+        userDetailsApiViewModel = ViewModelProvider(
             this,
             UserApiViewModelFactory(userDetailsRepo, null)
         )[UserDetailsApiViewModel::class.java]
