@@ -24,5 +24,9 @@ data class UserCred(
     @ColumnInfo(name = "Password")
     val password: String,
     @ColumnInfo(name = "Description")
-    val description: String
+    val description: String,
+    @ColumnInfo(name = "created_at")
+    val createdAt: String,
+    @ColumnInfo(name = "updated_at")
+    val updateAt: String
 )

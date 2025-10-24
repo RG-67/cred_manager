@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.snackbar.Snackbar
 import com.project.credmanager.R
 import com.project.credmanager.adapter.UserCredAdapter
 import com.project.credmanager.databinding.ActivityMainBinding
@@ -29,6 +30,7 @@ import com.project.credmanager.userViewModel.UserViewModelFactory
 import com.project.credmanager.utils.AppPreference
 import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
+import com.project.credmanager.utils.NetworkDialog
 import com.project.credmanager.utils.NetworkMonitor
 import kotlinx.serialization.descriptors.buildSerialDescriptor
 
@@ -39,11 +41,17 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userCredAdapter: UserCredAdapter
     private lateinit var userCredApiViewModel: UserCredApiViewModel
     private val credList = ArrayList<UserCred>()
+    private var networkDialog: android.app.AlertDialog? = null
+    private var uCred: UserCred? = null
+    private var credPos = 0
+    private var networkConnected = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        networkDialog = NetworkDialog.showNetworkDialog(this)
 
         val userCredRepo = UserCredRepo(ApiClient.apiInterface)
         userCredApiViewModel = ViewModelProvider(
@@ -70,7 +78,9 @@ class MainActivity : AppCompatActivity() {
                         title = element.title,
                         userName = element.username,
                         password = element.password,
-                        description = element.description
+                        description = element.description,
+                        createdAt = element.created_at,
+                        updateAt = element.updated_at
                     )
                     userViewModel.insertUserCred(userCred)
                 }
@@ -87,7 +97,9 @@ class MainActivity : AppCompatActivity() {
                         userId = element.userId,
                         userName = element.userName,
                         userPhone = element.userPhone,
-                        localCredId = element.id
+                        localCredId = element.id,
+                        created_at = element.createdAt,
+                        updated_at = element.updateAt
                     )
                     userCredApiViewModel.insertUserCred(userCred)
                 }
@@ -96,18 +108,17 @@ class MainActivity : AppCompatActivity() {
                 if (cred.size == credList.size) {
                     for (localDbItem in credList) {
                         val isItemSame = cred.any { apiItem ->
-                            localDbItem.title == apiItem.title ||
-                                    localDbItem.description != apiItem.description ||
-                                    localDbItem.userName != apiItem.username ||
-                                    localDbItem.password != apiItem.password
+                            localDbItem.createdAt == apiItem.created_at &&
+                                    localDbItem.updateAt != apiItem.updated_at
                         }
+
                         if (isItemSame) {
                             val map = HashMap<String, String>()
-                            map["internalId"] = AppPreference.getInternalId(this).toString()
                             map["generatedUserId"] =
                                 AppPreference.getGeneratedUserId(this).toString()
                             map["userId"] = AppPreference.getUserId(this).toString()
                             map["localCredId"] = localDbItem.id.toString()
+                            map["created_at"] = localDbItem.createdAt
 
                             val updateUserCredReq = UpdateUserCredReq(
                                 description = localDbItem.description,
@@ -115,7 +126,8 @@ class MainActivity : AppCompatActivity() {
                                 password = localDbItem.password,
                                 title = localDbItem.title,
                                 userName = localDbItem.userName,
-                                userPhone = localDbItem.userPhone
+                                userPhone = localDbItem.userPhone,
+                                updated_at = localDbItem.updateAt
                             )
                             userCredApiViewModel.updateUserCred(map, updateUserCredReq)
                         }
@@ -128,7 +140,7 @@ class MainActivity : AppCompatActivity() {
                                     apiData.description == localItem.description &&
                                     apiData.username == localItem.userName &&
                                     apiData.password == localItem.password &&
-                                    apiData.local_cred_id == localItem.id.toLong()
+                                    apiData.created_at == localItem.createdAt
                         }
                         if (!isItemExists) {
                             val newUserCred = UserCred(
@@ -140,7 +152,9 @@ class MainActivity : AppCompatActivity() {
                                 title = apiData.title,
                                 userName = apiData.username,
                                 password = apiData.password,
-                                description = apiData.description
+                                description = apiData.description,
+                                createdAt = apiData.created_at,
+                                updateAt = apiData.updated_at
                             )
                             userViewModel.insertUserCred(newUserCred)
                         }
@@ -153,7 +167,7 @@ class MainActivity : AppCompatActivity() {
                                     localDbItem.description == apiItem.description &&
                                     localDbItem.userName == apiItem.username &&
                                     localDbItem.password == apiItem.password &&
-                                    localDbItem.id.toLong() == apiItem.local_cred_id
+                                    localDbItem.createdAt == apiItem.created_at
                         }
                         if (!isItemExists) {
                             val userCred = InsertUserCredReq(
@@ -165,7 +179,9 @@ class MainActivity : AppCompatActivity() {
                                 userId = localDbItem.userId,
                                 userName = localDbItem.userName,
                                 userPhone = localDbItem.userPhone,
-                                localCredId = localDbItem.id
+                                localCredId = localDbItem.id,
+                                created_at = localDbItem.createdAt,
+                                updated_at = localDbItem.updateAt
                             )
                             userCredApiViewModel.insertUserCred(userCred)
                         }
@@ -194,6 +210,16 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        userCredApiViewModel.deletedCred.observe(this) { msg ->
+            userViewModel.deleteUserCred(uCred!!)
+            userCredAdapter.notifyItemRemoved(credPos)
+            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+        }
+
+        userCredApiViewModel.deleteCredError.observe(this) { msg ->
+            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+        }
+
 
         clickMethod()
         setAdapter()
@@ -205,6 +231,8 @@ class MainActivity : AppCompatActivity() {
         getCreds()
         NetworkMonitor.isConnected.observe(this) { isConnected ->
             if (isConnected) {
+                networkConnected = isConnected
+                networkDialog?.dismiss()
                 syncData()
             }
         }
@@ -229,6 +257,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("userName", edtCred.userName)
                 intent.putExtra("password", edtCred.password)
                 intent.putExtra("description", edtCred.description)
+                intent.putExtra("createdAt", edtCred.createdAt)
                 startActivity(intent)
             },
             dltBtn = { dltCred, position ->
@@ -302,7 +331,9 @@ class MainActivity : AppCompatActivity() {
                             pos.title,
                             pos.userName,
                             pos.password,
-                            pos.description
+                            pos.description,
+                            pos.createdAt,
+                            pos.updateAt
                         )
                     )
                 }
@@ -315,34 +346,48 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showAlert(cred: UserCred, position: Int) {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Alert")
-        builder.setIcon(R.drawable.logo)
-        builder.setMessage("You sure to remove ?")
-        builder.setPositiveButton("Ok") { dialog, _ ->
-            binding.searchCred.setText("")
-            val userCred = UserCred(
-                cred.id,
-                cred.generatedUserId,
-                cred.userId,
-                cred.userPhone,
-                cred.deviceId,
-                cred.title,
-                cred.userName,
-                cred.password,
-                cred.description
-            )
-            userViewModel.deleteUserCred(userCred)
-            userCredAdapter.notifyItemRemoved(position)
-            dialog.dismiss()
-        }
-        builder.setNegativeButton("Cancel") { dialog, _ ->
-            dialog.dismiss()
-        }
+    private fun showAlert(userCred: UserCred, position: Int) {
+            if (networkConnected) {
+                networkDialog?.dismiss()
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("Alert")
+                builder.setIcon(R.drawable.logo)
+                builder.setMessage("You sure to remove ?")
+                builder.setPositiveButton("Ok") { dialog, _ ->
+                    binding.searchCred.setText("")
+                    uCred = UserCred(
+                        userCred.id,
+                        userCred.generatedUserId,
+                        userCred.userId,
+                        userCred.userPhone,
+                        userCred.deviceId,
+                        userCred.title,
+                        userCred.userName,
+                        userCred.password,
+                        userCred.description,
+                        userCred.createdAt,
+                        userCred.updateAt
+                    )
+                    credPos = position
+                    val map = HashMap<String, String>()
+                    map["generatedUserId"] = userCred.generatedUserId.toString()
+                    map["userId"] = userCred.userId
+                    map["localCredId"] = userCred.id.toString()
+                    map["createdAt"] = userCred.createdAt
+                    map["updatedAt"] = userCred.updateAt
+                    userCredApiViewModel.deleteCred(map)
+                    dialog.dismiss()
+                }
+                builder.setNegativeButton("Cancel") { dialog, _ ->
+                    dialog.dismiss()
+                }
 
-        val dialog = builder.create()
-        dialog.show()
+                val dialog = builder.create()
+                dialog.show()
+
+            } else {
+                networkDialog?.show()
+            }
     }
 
     private fun showLogOutAlert() {

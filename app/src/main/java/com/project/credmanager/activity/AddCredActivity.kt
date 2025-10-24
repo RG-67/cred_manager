@@ -17,6 +17,8 @@ import com.project.credmanager.userViewModel.UserViewModelFactory
 import com.project.credmanager.utils.AppPreference
 import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
+import java.time.Instant
+import java.time.format.DateTimeFormatter
 
 class AddCredActivity : AppCompatActivity() {
 
@@ -24,6 +26,7 @@ class AddCredActivity : AppCompatActivity() {
     private lateinit var userViewModel: UserViewModel
     private var id = "0"
     private var valueFor = ""
+    private var createdAt = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,9 +67,12 @@ class AddCredActivity : AppCompatActivity() {
             val description = binding.desc.text.toString()
             val isInput = HandleUserInput.checkCredInput(title, userName, password, description)
             if (isInput.second) {
+                val currentDateTime = DateTimeFormatter.ISO_INSTANT.format(Instant.now())
+                createdAt = if (valueFor == "edit") intent.getStringExtra("createdAt")!!
+                else currentDateTime
                 Loading.showLoading(this)
                 val userCred = UserCred(
-                    id.toInt(),
+                    id = id.toInt(),
                     generatedUserId = AppPreference.getGeneratedUserId(this)!!.toInt(),
                     userId = AppPreference.getUserId(this)!!,
                     userPhone = AppPreference.getUserPhone(this)!!.toLong(),
@@ -74,7 +80,9 @@ class AddCredActivity : AppCompatActivity() {
                     title = title,
                     userName = userName,
                     password = password,
-                    description = description
+                    description = description,
+                    createdAt = createdAt,
+                    updateAt = currentDateTime
                 )
                 Log.d("UserCred ==>", userCred.toString())
                 if (valueFor == "edit") {

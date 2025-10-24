@@ -69,7 +69,8 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
             } else {
-                Result.failure(Exception("Error: ${response.code()}"))
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
             }
         } catch (e: Exception) {
             Result.failure(Exception(e))

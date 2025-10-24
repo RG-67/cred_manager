@@ -107,6 +107,8 @@
                 android:text="Description: "
                 android:textColor="@color/charcoal"
                 android:textSize="15sp"
+                android:layout_gravity="start"
+                android:gravity="start"
                 android:textStyle="bold" />
 
             <TextView

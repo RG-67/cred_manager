@@ -6,5 +6,6 @@ data class UpdateUserCredReq(
     val password: String,
     val title: String,
     val userName: String,
-    val userPhone: Long
+    val userPhone: Long,
+    val updated_at: String
 )
