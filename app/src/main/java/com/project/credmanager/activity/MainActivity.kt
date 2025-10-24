@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
 
         userCredApiViewModel.allCred.observe(this) { cred ->
-            if (cred.isNotEmpty() && credList.size == 0) {
+            if (cred.isNotEmpty() && credList.isEmpty()) {
                 Loading.showLoading(this)
                 for (element in cred) {
                     val userCred = UserCred(
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
                     userViewModel.insertUserCred(userCred)
                 }
                 Loading.dismissLoading()
-            } else if (cred.isEmpty() && credList.size > 0) {
+            } else if (cred.isEmpty() && credList.isNotEmpty()) {
                 Loading.showLoading(this)
                 for (element in credList) {
                     val userCred = InsertUserCredReq(
@@ -92,78 +92,83 @@ class MainActivity : AppCompatActivity() {
                     userCredApiViewModel.insertUserCred(userCred)
                 }
                 Loading.dismissLoading()
-            } else if (cred.isNotEmpty() && credList.size > 0) {
+            } else if (cred.isNotEmpty() && credList.isNotEmpty()) {
+                if (cred.size == credList.size) {
+                    for (localDbItem in credList) {
+                        val isItemSame = cred.any { apiItem ->
+                            localDbItem.title == apiItem.title ||
+                                    localDbItem.description != apiItem.description ||
+                                    localDbItem.userName != apiItem.username ||
+                                    localDbItem.password != apiItem.password
+                        }
+                        if (isItemSame) {
+                            val map = HashMap<String, String>()
+                            map["internalId"] = AppPreference.getInternalId(this).toString()
+                            map["generatedUserId"] =
+                                AppPreference.getGeneratedUserId(this).toString()
+                            map["userId"] = AppPreference.getUserId(this).toString()
+                            map["localCredId"] = localDbItem.id.toString()
+
+                            val updateUserCredReq = UpdateUserCredReq(
+                                description = localDbItem.description,
+                                deviceId = localDbItem.deviceId,
+                                password = localDbItem.password,
+                                title = localDbItem.title,
+                                userName = localDbItem.userName,
+                                userPhone = localDbItem.userPhone
+                            )
+                            userCredApiViewModel.updateUserCred(map, updateUserCredReq)
+                        }
+                    }
+                } else {
 //                Add api items missing from local database
-                for (apiData in cred) {
-                    val isItemExists = credList.any { localItem ->
-                        apiData.title == localItem.title &&
-                                apiData.description == localItem.description &&
-                                apiData.username == localItem.userName &&
-                                apiData.password == localItem.password
+                    for (apiData in cred) {
+                        val isItemExists = credList.any { localItem ->
+                            apiData.title == localItem.title &&
+                                    apiData.description == localItem.description &&
+                                    apiData.username == localItem.userName &&
+                                    apiData.password == localItem.password &&
+                                    apiData.local_cred_id == localItem.id.toLong()
+                        }
+                        if (!isItemExists) {
+                            val newUserCred = UserCred(
+                                0,
+                                generatedUserId = AppPreference.getGeneratedUserId(this)!!.toInt(),
+                                userId = AppPreference.getUserId(this)!!,
+                                userPhone = AppPreference.getUserPhone(this)!!.toLong(),
+                                deviceId = AppPreference.getDeviceId(this)!!,
+                                title = apiData.title,
+                                userName = apiData.username,
+                                password = apiData.password,
+                                description = apiData.description
+                            )
+                            userViewModel.insertUserCred(newUserCred)
+                        }
                     }
-                    if (!isItemExists) {
-                        val newUserCred = UserCred(
-                            0,
-                            generatedUserId = AppPreference.getGeneratedUserId(this)!!.toInt(),
-                            userId = AppPreference.getUserId(this)!!,
-                            userPhone = AppPreference.getUserPhone(this)!!.toLong(),
-                            deviceId = AppPreference.getDeviceId(this)!!,
-                            title = apiData.title,
-                            userName = apiData.username,
-                            password = apiData.password,
-                            description = apiData.description
-                        )
-                        userViewModel.insertUserCred(newUserCred)
-                    }
-                }
 
 //                Add local database items missing from api items
-                for (localDbItem in credList) {
-                    val isItemExists = cred.any { apiItem ->
-                        localDbItem.title == apiItem.title &&
-                                localDbItem.description == apiItem.description &&
-                                localDbItem.userName == apiItem.username &&
-                                localDbItem.password == apiItem.password
-                    }
-                    if (!isItemExists) {
-                        val userCred = InsertUserCredReq(
-                            description = localDbItem.description,
-                            deviceId = localDbItem.deviceId,
-                            generatedUserId = AppPreference.getInternalId(this)!!.toInt(),
-                            password = localDbItem.password,
-                            title = localDbItem.title,
-                            userId = localDbItem.userId,
-                            userName = localDbItem.userName,
-                            userPhone = localDbItem.userPhone,
-                            localCredId = localDbItem.id
-                        )
-                        userCredApiViewModel.insertUserCred(userCred)
-                    }
-                }
-            } else if (cred.size == credList.size) {
-                for (localDbItem in credList) {
-                    val isItemSame = cred.any { apiItem ->
-                        localDbItem.title == apiItem.title ||
-                                localDbItem.description != apiItem.description ||
-                                localDbItem.userName != apiItem.username ||
-                                localDbItem.password != apiItem.password
-                    }
-                    if (!isItemSame) {
-                        val map = HashMap<String, String>()
-                        map["internalId"] = AppPreference.getInternalId(this).toString()
-                        map["generatedUserId"] = AppPreference.getGeneratedUserId(this).toString()
-                        map["userId"] = AppPreference.getUserId(this).toString()
-                        map["localCredId"] = localDbItem.id.toString()
-
-                        val updateUserCredReq = UpdateUserCredReq(
-                            description = localDbItem.description,
-                            deviceId = localDbItem.deviceId,
-                            password = localDbItem.password,
-                            title = localDbItem.title,
-                            userName = localDbItem.userName,
-                            userPhone = localDbItem.userPhone
-                        )
-                        userCredApiViewModel.updateUserCred(map, updateUserCredReq)
+                    for (localDbItem in credList) {
+                        val isItemExists = cred.any { apiItem ->
+                            localDbItem.title == apiItem.title &&
+                                    localDbItem.description == apiItem.description &&
+                                    localDbItem.userName == apiItem.username &&
+                                    localDbItem.password == apiItem.password &&
+                                    localDbItem.id.toLong() == apiItem.local_cred_id
+                        }
+                        if (!isItemExists) {
+                            val userCred = InsertUserCredReq(
+                                description = localDbItem.description,
+                                deviceId = localDbItem.deviceId,
+                                generatedUserId = AppPreference.getInternalId(this)!!.toInt(),
+                                password = localDbItem.password,
+                                title = localDbItem.title,
+                                userId = localDbItem.userId,
+                                userName = localDbItem.userName,
+                                userPhone = localDbItem.userPhone,
+                                localCredId = localDbItem.id
+                            )
+                            userCredApiViewModel.insertUserCred(userCred)
+                        }
                     }
                 }
             }
@@ -191,15 +196,18 @@ class MainActivity : AppCompatActivity() {
 
 
         clickMethod()
-        getCreds()
         setAdapter()
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getCreds()
         NetworkMonitor.isConnected.observe(this) { isConnected ->
             if (isConnected) {
                 syncData()
             }
         }
-
     }
 
     private fun syncData() {

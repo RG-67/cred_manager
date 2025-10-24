@@ -16,5 +16,6 @@ data class Credential(
     val title: String,
     val userid: String,
     val username: String,
-    val userphone: Long
+    val userphone: Long,
+    val local_cred_id: Long
 )
