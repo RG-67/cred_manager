@@ -2,7 +2,7 @@ package com.project.credmanager.utils
 
 object ApiConstants {
 
-    const val BASE_URL = "http://192.168.1.58:3000/app/v1/" // Enter IpV4 address in place of localhost for testing
+    const val BASE_URL = "http://localhost:3000/app/v1/" // Enter IpV4 address in place of localhost for testing
 
     /*user details api*/
     const val getAllUser = "user/getAllUser"

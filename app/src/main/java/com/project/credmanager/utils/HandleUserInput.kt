@@ -56,8 +56,6 @@ object HandleUserInput {
             return Pair("Enter new password", false)
         } else if (conFirmPass.isEmpty()) {
             return Pair("Enter confirm password", false)
-        } else if (oldPass == newPass || oldPass == conFirmPass) {
-            return Pair("New and old password should not same", false)
         } else if (newPass != conFirmPass) {
             return Pair("New and confirm password should same", false)
         }
