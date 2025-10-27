@@ -2,7 +2,7 @@ package com.project.credmanager.utils
 
 object ApiConstants {
 
-    const val BASE_URL = "https://cred-manager-api.onrender.com/app/v1/"
+    const val BASE_URL = "https://localhost:3000/app/v1/"
 
     /*user details api*/
     const val getAllUser = "user/getAllUser"
