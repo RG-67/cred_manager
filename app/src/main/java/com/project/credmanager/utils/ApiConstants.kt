@@ -2,7 +2,7 @@ package com.project.credmanager.utils
 
 object ApiConstants {
 
-    const val BASE_URL = "http://localhost:3000/app/v1/" // Enter IpV4 address in place of localhost for testing
+    const val BASE_URL = "https://cred-manager-api.onrender.com/app/v1/"
 
     /*user details api*/
     const val getAllUser = "user/getAllUser"

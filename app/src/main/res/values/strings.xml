@@ -2,4 +2,7 @@
     <string name="app_name">Cred Manager</string>
     <string name="add_credential">Add Credential</string>
     <string name="profile">Profile</string>
+    <string name="enter_otp">Please enter the 6-digit OTP sent to your registered number (%s)</string>
+    <string name="change_password">Change the password for mobile number %s</string>
+    <string name="enter_mobile_number_for_password_change">Please enter your 10 digit mobile number</string>
 </resources>

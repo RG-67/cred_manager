@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_login.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/item_layout.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/item_layout.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_add_cred.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_add_cred.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/progress_dialog_layout.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/progress_dialog_layout.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_profile.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_forgot_pass.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_forgot_pass.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/network_monitor_layout.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/network_monitor_layout.xml"
+    },
+    {
+        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_register.xml",
+        "source": "com.project.credmanager.app-main-49:/layout/activity_register.xml"
+    }
+]

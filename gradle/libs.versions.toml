@@ -1,6 +1,8 @@
 [versions]
 agp = "8.8.0"
 bcrypt = "0.10.2"
+firebaseAuth = "23.0.0"
+#firebaseBom = "34.4.0"
 kotlin = "1.9.24"
 coreKtx = "1.7.0"
 junit = "4.13.2"
@@ -22,7 +24,11 @@ truth = "1.4.4"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 bcrypt = { module = "at.favre.lib:bcrypt", version.ref = "bcrypt" }
+#com-google-firebase-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+#firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

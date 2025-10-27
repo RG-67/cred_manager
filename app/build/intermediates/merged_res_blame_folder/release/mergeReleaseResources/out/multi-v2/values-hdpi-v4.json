@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.credmanager.app-mergeReleaseResources-50:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/ced05c1f3157dbaa0e9e2a82e090ef82/transformed/appcompat-1.6.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

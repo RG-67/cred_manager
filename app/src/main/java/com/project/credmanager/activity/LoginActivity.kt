@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
-//    private lateinit var userDetailsViewModel: UserDetailsViewModel
+    //    private lateinit var userDetailsViewModel: UserDetailsViewModel
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     private var networkDialog: AlertDialog? = null
@@ -83,6 +83,10 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginBtn.setOnClickListener {
             handleLogin()
+        }
+
+        binding.forgotPass.setOnClickListener {
+            startActivity(Intent(this, ForgotPassActivity::class.java))
         }
 
         userDetailsApiViewModel.getUserByPhone.observe(this) { user ->

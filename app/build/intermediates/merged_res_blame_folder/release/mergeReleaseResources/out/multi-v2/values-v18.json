@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.project.credmanager.app-mergeReleaseResources-50:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/ced05c1f3157dbaa0e9e2a82e090ef82/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}
