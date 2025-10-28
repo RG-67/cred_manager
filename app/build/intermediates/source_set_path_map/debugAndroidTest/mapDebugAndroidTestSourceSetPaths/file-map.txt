@@ -1,0 +1,7 @@
+com.project.credmanager.test.app-core-1.7.0-0 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\10beb521dee977fefdb158c02b616c51\transformed\core-1.7.0\res
+com.project.credmanager.test.app-core-testing-2.2.0-1 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\7ae8425c6073559e672eb86951bc6ba9\transformed\core-testing-2.2.0\res
+com.project.credmanager.test.app-core-runtime-2.2.0-2 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\bdf8291360fb2ebb98d33ef9d667e74b\transformed\core-runtime-2.2.0\res
+com.project.credmanager.test.app-androidTest-3 D:\RITTIK\CredManager\app\build\generated\res\resValues\androidTest\debug
+com.project.credmanager.test.app-mergeDebugAndroidTestResources-4 D:\RITTIK\CredManager\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.project.credmanager.test.app-mergeDebugAndroidTestResources-5 D:\RITTIK\CredManager\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.project.credmanager.test.app-debugAndroidTest-6 D:\RITTIK\CredManager\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

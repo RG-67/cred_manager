@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.project.credmanager.UserDetailsDaoTest" tests="1" failures="0" errors="0" skipped="0" time="2.038" timestamp="2025-10-03T10:38:09" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_5_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="insertUser" classname="com.project.credmanager.UserDetailsDaoTest" time="0.143" />
+</testsuite>

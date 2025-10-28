@@ -1,0 +1,2 @@
+10-03 16:07:58.150 13853 13885 I TestRunner: started: insertUser(com.project.credmanager.UserDetailsDaoTest)
+10-03 16:07:58.311 13853 13885 I TestRunner: finished: insertUser(com.project.credmanager.UserDetailsDaoTest)
