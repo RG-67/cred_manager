@@ -63,6 +63,8 @@ interface ApiInterface {
 
     @DELETE(ApiConstants.deleteUserCred)
     suspend fun deleteUserCred(@QueryMap map: HashMap<String, String>): Response<DeleteUserCredRes>
+
+    @
     /*-----------------------------  *****  ------------------------------------*/
 
 }

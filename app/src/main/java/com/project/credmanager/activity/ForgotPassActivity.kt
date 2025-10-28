@@ -13,6 +13,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
@@ -22,34 +23,57 @@ import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
 import com.project.credmanager.R
 import com.project.credmanager.databinding.ActivityForgotPassBinding
+import com.project.credmanager.network.ApiClient
+import com.project.credmanager.network.repository.UserDetailsRepo
+import com.project.credmanager.userViewModel.UserApiViewModel.UserApiViewModelFactory
+import com.project.credmanager.userViewModel.UserApiViewModel.UserDetailsApiViewModel
+import com.project.credmanager.utils.HandleUserInput
 import com.project.credmanager.utils.Loading
 import java.util.concurrent.TimeUnit
 
 class ForgotPassActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityForgotPassBinding
-    private var otp = ""
-    private var auth: FirebaseAuth? = null
+
+    //    private var otp = ""
+//    private var auth: FirebaseAuth? = null
+    private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityForgotPassBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        auth = FirebaseAuth.getInstance()
+//        auth = FirebaseAuth.getInstance()
 
-        setClickMethod()
+        val apiInterface = ApiClient.apiInterface
+        userDetailsApiViewModel = ViewModelProvider(
+            this,
+            UserApiViewModelFactory(UserDetailsRepo(apiInterface), null)
+        )[UserDetailsApiViewModel::class.java]
+
+        userDetailsApiViewModel.getUserByPhone.observe(this) { user ->
+
+        }
+
+        binding.submitBtn.setOnClickListener {
+            handleUserInput()
+        }
 
     }
 
-    private fun setClickMethod() {
+    private fun handleUserInput() {
         binding.submitBtn.setOnClickListener {
             val number = binding.phoneNumber.text.toString()
-            if (number == "" || number.length != 10) {
-                Snackbar.make(this, binding.root, "Enter valid number", Snackbar.LENGTH_SHORT)
+            val email = binding.email.text.toString()
+
+            val result = HandleUserInput.checkVerifyPassInput(number, email)
+
+            if (result.second) {
+                Snackbar.make(this, binding.root, result.first, Snackbar.LENGTH_SHORT)
                     .show()
             } else {
-                sendOtp("+91" + number.trim())
+
             }
         }
 
@@ -61,8 +85,8 @@ class ForgotPassActivity : AppCompatActivity() {
             if (enteredOtp.length != 6) {
                 Snackbar.make(this, binding.root, "Enter OTP", Snackbar.LENGTH_SHORT).show()
             } else {
-                val credential = PhoneAuthProvider.getCredential(otp, enteredOtp)
-                signInWithCredential(credential)
+                /*val credential = PhoneAuthProvider.getCredential(otp, enteredOtp)
+                signInWithCredential(credential)*/
             }
         }
 
@@ -118,18 +142,8 @@ class ForgotPassActivity : AppCompatActivity() {
         }
     }
 
-    private fun sendOtp(number: String) {
-        Loading.showLoading(this)
-        val options = PhoneAuthOptions.newBuilder(auth!!)
-            .setPhoneNumber(number)
-            .setTimeout(60L, TimeUnit.SECONDS)
-            .setActivity(this)
-            .setCallbacks(callBack)
-            .build()
-        PhoneAuthProvider.verifyPhoneNumber(options)
-    }
 
-    private val callBack = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+    /*private val callBack = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
         override fun onVerificationCompleted(credential: PhoneAuthCredential) {
             Loading.dismissLoading()
             signInWithCredential(credential)
@@ -179,7 +193,7 @@ class ForgotPassActivity : AppCompatActivity() {
                     }
                 }
             }
-    }
+    }*/
 
     private fun setPassVisibility(edtText: EditText, image: ImageView) {
         if (edtText.text.toString().isNotEmpty()) {

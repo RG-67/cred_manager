@@ -76,6 +76,15 @@ object HandleUserInput {
         return result.verified
     }
 
+    fun checkVerifyPassInput(number: String, email: String): Pair<String, Boolean> {
+        if (number.isEmpty() || number.length != 10) {
+            return Pair("Enter valid phone number", false)
+        } else if (email.isEmpty()) {
+            return Pair("Enter email address", false)
+        }
+        return Pair("", true)
+    }
+
     fun hideKeyboard(context: Context, view: View) {
         val inputMethodManager =
             context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
