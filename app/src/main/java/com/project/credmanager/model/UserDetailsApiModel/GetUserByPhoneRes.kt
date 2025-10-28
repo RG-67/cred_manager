@@ -11,5 +11,6 @@ data class UserDetails(
     val internal_id: Int,
     val password: String,
     val userid: String,
-    val userphone: Long
+    val userphone: Long,
+    val email: String
 )

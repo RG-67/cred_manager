@@ -98,6 +98,7 @@ class LoginActivity : AppCompatActivity() {
                 AppPreference.setGeneratedUserId(this, user.internal_id.toString())
                 AppPreference.setUserId(this, user.userid)
                 AppPreference.setUserPhone(this, user.userphone.toString())
+                AppPreference.setEmailId(this, user.email)
                 AppPreference.setDeviceId(this, user.deviceid)
                 AppPreference.setInternalId(this, user.internal_id.toString())
                 AppPreference.setLoginStatus(this, true)
@@ -140,9 +141,10 @@ class LoginActivity : AppCompatActivity() {
     private fun handleLogin() {
         val phone = binding.phone.text.toString()
         val pass = binding.password.text.toString()
-        val isCheck = HandleUserInput.checkUserInput(true, phone, pass, "")
+        val email = binding.email.text.toString()
+        val isCheck = HandleUserInput.checkUserInput(true, phone, email, pass, "")
         if (isCheck.second) {
-            userDetailsApiViewModel.getUserByPhone(phone)
+            userDetailsApiViewModel.getUserByPhone(phone, email)
             /*userDetailsViewModel.getSingleUser(phone.toLong()) { user ->
                 Loading.dismissLoading()
                 if (user == null) {

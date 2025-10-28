@@ -75,10 +75,11 @@ class RegisterActivity : AppCompatActivity() {
 
         binding.registerBtn.setOnClickListener {
             val phone = binding.phone.text.toString()
+            val email = binding.email.text.toString()
             val password = binding.password.text.toString()
             val conPass = binding.conPassword.text.toString()
 
-            val result = HandleUserInput.checkUserInput(false, phone, password, conPass)
+            val result = HandleUserInput.checkUserInput(false, phone, email, password, conPass)
 
             if (result.second) {
                 binding.registerBtn.isEnabled = false
@@ -157,7 +158,8 @@ class RegisterActivity : AppCompatActivity() {
             deviceId = deviceId,
             password = pass,
             userId = userId,
-            userPhone = binding.phone.text.toString()
+            userPhone = binding.phone.text.toString(),
+            userEmail = binding.email.text.toString()
         )
 
         userDetailsApiViewModel.insertUser(userDetails)

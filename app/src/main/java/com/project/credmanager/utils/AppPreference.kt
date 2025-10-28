@@ -7,6 +7,7 @@ object AppPreference {
 
     const val GENERATED_USER_ID = "generatedUserId"
     const val USERID = "userID"
+    const val EMAIL_ID = "emailId"
     const val USER_PHONE = "userPhone"
     const val DEVICE_ID = "deviceId"
     const val INTERNAL_ID = "internalId"
@@ -50,6 +51,14 @@ object AppPreference {
 
     fun getUserId(context: Context): String? {
         return getString(context, USERID)
+    }
+
+    fun setEmailId(context: Context, value: String) {
+        putString(context, EMAIL_ID, value)
+    }
+
+    fun getEmailId(context: Context): String? {
+        return getString(context, EMAIL_ID)
     }
 
     fun setUserPhone(context: Context, value: String) {

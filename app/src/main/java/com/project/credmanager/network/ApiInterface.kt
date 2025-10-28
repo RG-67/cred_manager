@@ -35,7 +35,10 @@ interface ApiInterface {
     suspend fun insertUser(@Body insertUserReq: InsertUserReq): Response<InsertUserRes>
 
     @GET(ApiConstants.getUserByPhone)
-    suspend fun getUserByPhone(@Query("phone") phone: String): Response<GetUserByPhoneRes>
+    suspend fun getUserByPhone(
+        @Query("phone") phone: String,
+        @Query("email") email: String
+    ): Response<GetUserByPhoneRes>
 
     @PUT(ApiConstants.updateUser)
     suspend fun updateUser(@Body updateUserReq: UpdateUserReq): Response<UpdateUserRes>

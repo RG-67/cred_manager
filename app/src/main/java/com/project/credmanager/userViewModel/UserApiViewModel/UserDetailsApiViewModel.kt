@@ -74,9 +74,9 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
         }
     }
 
-    fun getUserByPhone(phone: String) {
+    fun getUserByPhone(phone: String, email: String) {
         viewModelScope.launch {
-            val result = userDetailsRepo!!.getUserByPhone(phone)
+            val result = userDetailsRepo!!.getUserByPhone(phone, email)
             result.onSuccess { res ->
                 if (res.status) _getUserByPhone.value = res.data
                 else _errorUsersByPhone.value = res.msg

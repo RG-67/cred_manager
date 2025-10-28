@@ -45,9 +45,9 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
         }
     }
 
-    suspend fun getUserByPhone(phone: String): Result<GetUserByPhoneRes> {
+    suspend fun getUserByPhone(phone: String, email: String): Result<GetUserByPhoneRes> {
         return try {
-            val response = apiInterface.getUserByPhone(phone)
+            val response = apiInterface.getUserByPhone(phone, email)
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it)

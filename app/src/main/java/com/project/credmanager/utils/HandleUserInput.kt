@@ -10,13 +10,15 @@ import org.json.JSONObject
 object HandleUserInput {
 
     fun checkUserInput(
-        isLogin: Boolean, phone: String, password: String, confirmPassword: String
+        isLogin: Boolean, phone: String, email: String, password: String, confirmPassword: String
     ): Pair<String, Boolean> {
-        if (phone.isNullOrEmpty() || phone.length < 10) {
+        if (phone.isEmpty() || phone.length < 10) {
             return Pair("Enter valid number", false)
-        } else if (password.isNullOrEmpty()) {
+        } else if (email.isEmpty()) {
+            return Pair("Enter email address", false)
+        } else if (password.isEmpty()) {
             return Pair("Enter password", false)
-        } else if (!isLogin && confirmPassword.isNullOrEmpty()) {
+        } else if (!isLogin && confirmPassword.isEmpty()) {
             return Pair("Enter password", false)
         } else if (!isLogin && password != confirmPassword) {
             return Pair("Password does not match", false)
@@ -44,12 +46,15 @@ object HandleUserInput {
 
     fun checkProfileInput(
         phone: String,
+        email: String,
         oldPass: String,
         newPass: String,
         conFirmPass: String
     ): Pair<String, Boolean> {
         if (phone.isEmpty() || phone.length < 10) {
             return Pair("Enter valid number", false)
+        } else if (email.isEmpty()) {
+            return Pair("Enter email id", false)
         } else if (oldPass.isEmpty()) {
             return Pair("Enter old password", false)
         } else if (newPass.isEmpty()) {

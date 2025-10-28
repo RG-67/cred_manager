@@ -4,5 +4,6 @@ data class InsertUserReq(
     val deviceId: String,
     val password: String,
     val userId: String,
-    val userPhone: String
+    val userPhone: String,
+    val userEmail: String
 )

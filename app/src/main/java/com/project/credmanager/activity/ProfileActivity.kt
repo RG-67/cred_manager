@@ -54,6 +54,7 @@ class ProfileActivity : AppCompatActivity() {
 
         binding.userId.text = AppPreference.getUserId(this)
         binding.phone.setText(AppPreference.getUserPhone(this))
+        binding.email.setText(AppPreference.getEmailId(this))
 
         clickMethod()
 
@@ -89,7 +90,8 @@ class ProfileActivity : AppCompatActivity() {
                     internalId = AppPreference.getInternalId(this)!!.toInt(),
                     userOldPhone = AppPreference.getUserPhone(this)!!.toLong(),
                     password = pass,
-                    userPhone = binding.phone.text.toString().toLong()
+                    userPhone = binding.phone.text.toString().toLong(),
+                    userEmail = binding.email.text.toString()
                 )
                 userDetailsApiViewModel.updateUser(updateUserReq)
             } else {
@@ -133,15 +135,19 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun updateProfile() {
         val phone = binding.phone.text.toString().trim()
+        val email = binding.email.text.toString()
         val oldPass = binding.oldPassword.text.toString().trim()
         val newPass = binding.newPassword.text.toString().trim()
         val confirmPass = binding.confirmPassword.text.toString().trim()
 
-        val result = HandleUserInput.checkProfileInput(phone, oldPass, newPass, confirmPass)
+        val result = HandleUserInput.checkProfileInput(phone, email, oldPass, newPass, confirmPass)
 
         if (result.second) {
             Loading.showLoading(this)
-            userDetailsApiViewModel.getUserByPhone(AppPreference.getUserPhone(this).toString())
+            userDetailsApiViewModel.getUserByPhone(
+                AppPreference.getUserPhone(this).toString(),
+                email
+            )
         } else {
             Snackbar.make(this, binding.root, result.first, Snackbar.LENGTH_SHORT).show()
         }
