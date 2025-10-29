@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.project.credmanager.app-mergeDebugResources-45:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.project.credmanager.app-mergeDebugResources-37:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

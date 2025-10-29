@@ -4,76 +4,57 @@ ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidM
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:2:1-54:12
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:2:1-54:12
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:2:1-54:12
-MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/5f20144dcea1d1a2cc2dca80f3b04336/transformed/viewbinding-8.8.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35afc54f03b7c5660fa201bd1e7f9d3/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/02243d8dde8660d03ce60f171710438f/transformed/lottie-6.6.7/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/bda637610f2e155ded9b0b61adc22d81/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:17:1-75:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7acfb0c5253f9638113b1cd41e4efd30/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.credentials:credentials:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/4d6b6e544fd13cc45bf8f961db062b7b/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:17:1-44:12
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/rittik/.gradle/caches/8.10.2/transforms/b26dd4c740bcc2edd909a6886e09e048/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.play:integrity:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/6cfa3ed59feee04c197bf00e446d90d7/transformed/integrity-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8f0cf9b0c0010e0524935f4aa43cddd/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/05ee4c750dfedc9b0302040edad1c1ea/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/530ad23937369da34ccc81672c42e526/transformed/play-services-fido-20.1.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /home/rittik/.gradle/caches/8.10.2/transforms/9da9189bd99c0e57a52a02de9961d5c2/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e0f105b4da39006df2327bbbe32d1bb4/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/17fc63c62f423199c913eb2815835941/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/d53a84af4ddc2e1a0da5808e389d560a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/670a2937d2525f4f81fe3572d167103a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/62b219a956ccb83afe1354b7be0deac4/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/08b1ad5948ebad9e385e978435481fa3/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/1ff3e99ee108f1242671140ebcb375e6/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:2:1-5:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ae04be6b85e7ff9f9dce8845d6bf1bcc/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/68453f0b7787026104be9598aa27ab76/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6b5b71c58227fcef07677e5289727c3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d4f440aebbc133a1ec7b679680b56b9f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/90485f68ec48086eec40bbe6cd4a5e57/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/e34294ff3c98a7b974947f11973fa9e8/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9218a0af8fea721e81d8c466b083ab2/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/2842ff80e87ce0071554f67229069b98/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/93aa5db849c6e7fc81ce387dd7299b28/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/28e8ee5d500d48932e25e7e652155e76/transformed/savedstate-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/58af8c2712590e1a40fc1f45fa340b55/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/0dbdb496bd5f44f56b76d0951157e9ed/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7cab8b0588109e14be40b0f7bdec261e/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/39fc8eb945c13fd3e377e265af1c3e17/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/cbf2f4d944738d7777830ff32762f43b/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f6762a887490cbb19a52e6d8ac6329f4/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/8ba37e6b15852e69f57cfb1bfa009ce4/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/819c72c6833cb64d22fd1e2d3cccfdfa/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/9296e56c832cbb5af216bcd2010f1c35/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/28546f56a5ac9848428dfa70e2fb5b1c/transformed/activity-1.10.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/4f8e808809261ebac1ba45799afc16c5/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/07806673b28a23ef1d315b175ed94175/transformed/googleid-1.1.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/458db3fd9aac6945be8fe0b730821f8d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/54426115440e4e88507dbbb81be0eccf/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/015829a949fcfb9dea5157fe38370fb0/transformed/sqlite-framework-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/7574ba0884286d3a000673f88c968dcf/transformed/sqlite-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/608dd132fc44dd94b3506a0caef63bb6/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/199b3bfe67cedbafd01f89e5904adb5b/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/69681036322122e0446436fef505b181/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9cb83b912aaac692be0d080d2fe2105/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:18.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1ff1490fe38bc9d1fe8ecf833e57259a/transformed/firebase-components-18.0.0/AndroidManifest.xml:15:1-20:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/0a86886693d27470844e68ec1bb77bb7/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b737d7e9c54b9abbf7711265ed699d67/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1da12eb7b426cc4b60a4ef8d2d9945cd/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/332f4447c03a9b06f295ee89ff3e9f34/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/959d8d90ed1dd6f17ad469b997eb3fba/transformed/viewbinding-8.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/311d44308cdda55af06b39eb02cc233e/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/7b1a9ee67b5ad24593d6fa2685176584/transformed/lottie-6.6.7/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/1ae0651b4096a3311a443701192798f6/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f64b390d0d72db0ca9c4c8a7e349df94/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/274344f1363d129f554f5ca373fe5bdc/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/352fa4fa43346dbf953f2e57269dacd3/transformed/activity-1.10.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e924f37a0d25a34ab438c6b781a278d7/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/2a6658dfee3338c469a16acfa8bd9110/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8e61f9886a533cfd255aac8568174bf/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8dbd9dc7b8422ccdc79ce2154211c899/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/6511422d52baca52d7cfdda87338c7b7/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/14c13b8ed1a12c723fb8de39f7e8675d/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/da7695fd10a1e97634c39e8432c73f93/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/182a900e98a83e74f0c122fa86ff9d05/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/745143b88bf2b09c66abe90f8a556cdd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/0717143afa18711e8c8b47b8ae28907c/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/619b72482bccf165c2f3455fdadd265d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d8d2ee62d8e7bac7dc8aced7798b9533/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8c5b7901ddc919348686ab9c8a9f5f22/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/e65ab9d3afcc54b5746bca64da9b4cb4/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/c51787d6d3ace224fbdf28a80790176b/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/b915afcd7fdaf0a1fba5fba82dcd3526/transformed/savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35d46efc0727d362bc5593c14219d6a/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/660cbdf27c9096be3043585188d63675/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ea34727b9870a4c53ced106f9565f3f5/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/58d88302ad8d49be9b4860c4290be392/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f090362558520ef9be209c333fe0ef31/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7f84b4da8fb40754637aace4661080b2/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/bca53d95d34dd45f2219c217559f8a64/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/ee40b7b7111bbae179d97728273624f8/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/3be829cbb5fe47026cd4b01b50cf8e7f/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/dd7a8c7ee6d7f142da82251d175a1662/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/470a99b5204ee2230a4c81e46c944095/transformed/sqlite-framework-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/f627609c6ef7182ea943a7f8bcef3a53/transformed/sqlite-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c16cc9161a4b0fc5296acc9a4791379/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6e9b889ae3f1eba74e0ab5259353d40/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/63b36c930e966fa8d59ce857ffbac9d4/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/dbf80340486dc3cd2f2ef481a5464cc4/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7cc961886f2c2cbb2564c4f62364b6a6/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1db95c906222462c20cd7f9096418103/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a1b7fc67565075a0b30a113232da259a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/e972668fe3bea1eb7602f1fe83b50093/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -86,10 +67,6 @@ MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/tran
 		ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:7:5-67
 	android:name
 		ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CHANGE_WIFI_STATE
@@ -102,63 +79,35 @@ ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidM
 		ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:8:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:8:5-79
 	android:name
 		ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:8:22-76
 application
 ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:10:5-52:19
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:10:5-52:19
-MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35afc54f03b7c5660fa201bd1e7f9d3/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35afc54f03b7c5660fa201bd1e7f9d3/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
-MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/02243d8dde8660d03ce60f171710438f/transformed/lottie-6.6.7/AndroidManifest.xml:7:5-20
-MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/02243d8dde8660d03ce60f171710438f/transformed/lottie-6.6.7/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:28:5-73:19
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:23:5-42:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.play:integrity:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/6cfa3ed59feee04c197bf00e446d90d7/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.android.play:integrity:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/6cfa3ed59feee04c197bf00e446d90d7/transformed/integrity-1.2.0/AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8f0cf9b0c0010e0524935f4aa43cddd/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8f0cf9b0c0010e0524935f4aa43cddd/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/05ee4c750dfedc9b0302040edad1c1ea/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/05ee4c750dfedc9b0302040edad1c1ea/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:22:5-39:19
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/530ad23937369da34ccc81672c42e526/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/530ad23937369da34ccc81672c42e526/transformed/play-services-fido-20.1.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/819c72c6833cb64d22fd1e2d3cccfdfa/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/819c72c6833cb64d22fd1e2d3cccfdfa/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/54426115440e4e88507dbbb81be0eccf/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/54426115440e4e88507dbbb81be0eccf/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/311d44308cdda55af06b39eb02cc233e/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/311d44308cdda55af06b39eb02cc233e/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/7b1a9ee67b5ad24593d6fa2685176584/transformed/lottie-6.6.7/AndroidManifest.xml:7:5-20
+MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/7b1a9ee67b5ad24593d6fa2685176584/transformed/lottie-6.6.7/AndroidManifest.xml:7:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/dd7a8c7ee6d7f142da82251d175a1662/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/dd7a8c7ee6d7f142da82251d175a1662/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
@@ -243,409 +192,209 @@ uses-sdk
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
 INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/5f20144dcea1d1a2cc2dca80f3b04336/transformed/viewbinding-8.8.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/5f20144dcea1d1a2cc2dca80f3b04336/transformed/viewbinding-8.8.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35afc54f03b7c5660fa201bd1e7f9d3/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35afc54f03b7c5660fa201bd1e7f9d3/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
-MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/02243d8dde8660d03ce60f171710438f/transformed/lottie-6.6.7/AndroidManifest.xml:5:5-44
-MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/02243d8dde8660d03ce60f171710438f/transformed/lottie-6.6.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/bda637610f2e155ded9b0b61adc22d81/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/bda637610f2e155ded9b0b61adc22d81/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
-MERGED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:21:5-23:151
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7acfb0c5253f9638113b1cd41e4efd30/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7acfb0c5253f9638113b1cd41e4efd30/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.credentials:credentials:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/4d6b6e544fd13cc45bf8f961db062b7b/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
-MERGED from [androidx.credentials:credentials:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/4d6b6e544fd13cc45bf8f961db062b7b/transformed/credentials-1.2.0-rc01/AndroidManifest.xml:5:5-44
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
-MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/rittik/.gradle/caches/8.10.2/transforms/b26dd4c740bcc2edd909a6886e09e048/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/rittik/.gradle/caches/8.10.2/transforms/b26dd4c740bcc2edd909a6886e09e048/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.play:integrity:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/6cfa3ed59feee04c197bf00e446d90d7/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.play:integrity:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/6cfa3ed59feee04c197bf00e446d90d7/transformed/integrity-1.2.0/AndroidManifest.xml:4:5-44
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8f0cf9b0c0010e0524935f4aa43cddd/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8f0cf9b0c0010e0524935f4aa43cddd/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/05ee4c750dfedc9b0302040edad1c1ea/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/05ee4c750dfedc9b0302040edad1c1ea/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:19:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/530ad23937369da34ccc81672c42e526/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/530ad23937369da34ccc81672c42e526/transformed/play-services-fido-20.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /home/rittik/.gradle/caches/8.10.2/transforms/9da9189bd99c0e57a52a02de9961d5c2/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /home/rittik/.gradle/caches/8.10.2/transforms/9da9189bd99c0e57a52a02de9961d5c2/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e0f105b4da39006df2327bbbe32d1bb4/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e0f105b4da39006df2327bbbe32d1bb4/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/17fc63c62f423199c913eb2815835941/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/17fc63c62f423199c913eb2815835941/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/d53a84af4ddc2e1a0da5808e389d560a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/d53a84af4ddc2e1a0da5808e389d560a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/670a2937d2525f4f81fe3572d167103a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/670a2937d2525f4f81fe3572d167103a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/62b219a956ccb83afe1354b7be0deac4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/62b219a956ccb83afe1354b7be0deac4/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/08b1ad5948ebad9e385e978435481fa3/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/08b1ad5948ebad9e385e978435481fa3/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/1ff3e99ee108f1242671140ebcb375e6/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/1ff3e99ee108f1242671140ebcb375e6/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ae04be6b85e7ff9f9dce8845d6bf1bcc/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ae04be6b85e7ff9f9dce8845d6bf1bcc/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/68453f0b7787026104be9598aa27ab76/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/68453f0b7787026104be9598aa27ab76/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6b5b71c58227fcef07677e5289727c3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6b5b71c58227fcef07677e5289727c3/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d4f440aebbc133a1ec7b679680b56b9f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d4f440aebbc133a1ec7b679680b56b9f/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/90485f68ec48086eec40bbe6cd4a5e57/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/90485f68ec48086eec40bbe6cd4a5e57/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/e34294ff3c98a7b974947f11973fa9e8/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/e34294ff3c98a7b974947f11973fa9e8/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9218a0af8fea721e81d8c466b083ab2/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9218a0af8fea721e81d8c466b083ab2/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/2842ff80e87ce0071554f67229069b98/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/2842ff80e87ce0071554f67229069b98/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/93aa5db849c6e7fc81ce387dd7299b28/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/93aa5db849c6e7fc81ce387dd7299b28/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/28e8ee5d500d48932e25e7e652155e76/transformed/savedstate-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/28e8ee5d500d48932e25e7e652155e76/transformed/savedstate-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/58af8c2712590e1a40fc1f45fa340b55/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/58af8c2712590e1a40fc1f45fa340b55/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/0dbdb496bd5f44f56b76d0951157e9ed/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/0dbdb496bd5f44f56b76d0951157e9ed/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7cab8b0588109e14be40b0f7bdec261e/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7cab8b0588109e14be40b0f7bdec261e/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/39fc8eb945c13fd3e377e265af1c3e17/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/39fc8eb945c13fd3e377e265af1c3e17/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/cbf2f4d944738d7777830ff32762f43b/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/cbf2f4d944738d7777830ff32762f43b/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f6762a887490cbb19a52e6d8ac6329f4/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f6762a887490cbb19a52e6d8ac6329f4/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/8ba37e6b15852e69f57cfb1bfa009ce4/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/8ba37e6b15852e69f57cfb1bfa009ce4/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/819c72c6833cb64d22fd1e2d3cccfdfa/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/819c72c6833cb64d22fd1e2d3cccfdfa/transformed/play-services-tasks-18.1.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:18:5-43
-MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/9296e56c832cbb5af216bcd2010f1c35/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/9296e56c832cbb5af216bcd2010f1c35/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/28546f56a5ac9848428dfa70e2fb5b1c/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/28546f56a5ac9848428dfa70e2fb5b1c/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/4f8e808809261ebac1ba45799afc16c5/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/4f8e808809261ebac1ba45799afc16c5/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/07806673b28a23ef1d315b175ed94175/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/07806673b28a23ef1d315b175ed94175/transformed/googleid-1.1.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/458db3fd9aac6945be8fe0b730821f8d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/458db3fd9aac6945be8fe0b730821f8d/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/54426115440e4e88507dbbb81be0eccf/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/54426115440e4e88507dbbb81be0eccf/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/015829a949fcfb9dea5157fe38370fb0/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/015829a949fcfb9dea5157fe38370fb0/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/7574ba0884286d3a000673f88c968dcf/transformed/sqlite-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/7574ba0884286d3a000673f88c968dcf/transformed/sqlite-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/608dd132fc44dd94b3506a0caef63bb6/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/608dd132fc44dd94b3506a0caef63bb6/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/199b3bfe67cedbafd01f89e5904adb5b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/199b3bfe67cedbafd01f89e5904adb5b/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/69681036322122e0446436fef505b181/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/69681036322122e0446436fef505b181/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9cb83b912aaac692be0d080d2fe2105/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a9cb83b912aaac692be0d080d2fe2105/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:18.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1ff1490fe38bc9d1fe8ecf833e57259a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
-MERGED from [com.google.firebase:firebase-components:18.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1ff1490fe38bc9d1fe8ecf833e57259a/transformed/firebase-components-18.0.0/AndroidManifest.xml:18:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/0a86886693d27470844e68ec1bb77bb7/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/0a86886693d27470844e68ec1bb77bb7/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b737d7e9c54b9abbf7711265ed699d67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b737d7e9c54b9abbf7711265ed699d67/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1da12eb7b426cc4b60a4ef8d2d9945cd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1da12eb7b426cc4b60a4ef8d2d9945cd/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/332f4447c03a9b06f295ee89ff3e9f34/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/332f4447c03a9b06f295ee89ff3e9f34/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-	tools:overrideLibrary
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:23:9-148
+MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/959d8d90ed1dd6f17ad469b997eb3fba/transformed/viewbinding-8.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.8.0] /home/rittik/.gradle/caches/8.10.2/transforms/959d8d90ed1dd6f17ad469b997eb3fba/transformed/viewbinding-8.8.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/311d44308cdda55af06b39eb02cc233e/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /home/rittik/.gradle/caches/8.10.2/transforms/311d44308cdda55af06b39eb02cc233e/transformed/constraintlayout-2.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/7b1a9ee67b5ad24593d6fa2685176584/transformed/lottie-6.6.7/AndroidManifest.xml:5:5-44
+MERGED from [com.airbnb.android:lottie:6.6.7] /home/rittik/.gradle/caches/8.10.2/transforms/7b1a9ee67b5ad24593d6fa2685176584/transformed/lottie-6.6.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/1ae0651b4096a3311a443701192798f6/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/1ae0651b4096a3311a443701192798f6/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f64b390d0d72db0ca9c4c8a7e349df94/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f64b390d0d72db0ca9c4c8a7e349df94/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/274344f1363d129f554f5ca373fe5bdc/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rittik/.gradle/caches/8.10.2/transforms/274344f1363d129f554f5ca373fe5bdc/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/352fa4fa43346dbf953f2e57269dacd3/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] /home/rittik/.gradle/caches/8.10.2/transforms/352fa4fa43346dbf953f2e57269dacd3/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e924f37a0d25a34ab438c6b781a278d7/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/e924f37a0d25a34ab438c6b781a278d7/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/2a6658dfee3338c469a16acfa8bd9110/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/rittik/.gradle/caches/8.10.2/transforms/2a6658dfee3338c469a16acfa8bd9110/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8e61f9886a533cfd255aac8568174bf/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b8e61f9886a533cfd255aac8568174bf/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8dbd9dc7b8422ccdc79ce2154211c899/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8dbd9dc7b8422ccdc79ce2154211c899/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/6511422d52baca52d7cfdda87338c7b7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/6511422d52baca52d7cfdda87338c7b7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/14c13b8ed1a12c723fb8de39f7e8675d/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/14c13b8ed1a12c723fb8de39f7e8675d/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/da7695fd10a1e97634c39e8432c73f93/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/da7695fd10a1e97634c39e8432c73f93/transformed/lifecycle-viewmodel-2.9.3/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/182a900e98a83e74f0c122fa86ff9d05/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/182a900e98a83e74f0c122fa86ff9d05/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/745143b88bf2b09c66abe90f8a556cdd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/745143b88bf2b09c66abe90f8a556cdd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/0717143afa18711e8c8b47b8ae28907c/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/0717143afa18711e8c8b47b8ae28907c/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/619b72482bccf165c2f3455fdadd265d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/619b72482bccf165c2f3455fdadd265d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d8d2ee62d8e7bac7dc8aced7798b9533/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/d8d2ee62d8e7bac7dc8aced7798b9533/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8c5b7901ddc919348686ab9c8a9f5f22/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/8c5b7901ddc919348686ab9c8a9f5f22/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/e65ab9d3afcc54b5746bca64da9b4cb4/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/e65ab9d3afcc54b5746bca64da9b4cb4/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/c51787d6d3ace224fbdf28a80790176b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/rittik/.gradle/caches/8.10.2/transforms/c51787d6d3ace224fbdf28a80790176b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/b915afcd7fdaf0a1fba5fba82dcd3526/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] /home/rittik/.gradle/caches/8.10.2/transforms/b915afcd7fdaf0a1fba5fba82dcd3526/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35d46efc0727d362bc5593c14219d6a/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/e35d46efc0727d362bc5593c14219d6a/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/660cbdf27c9096be3043585188d63675/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/660cbdf27c9096be3043585188d63675/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ea34727b9870a4c53ced106f9565f3f5/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/ea34727b9870a4c53ced106f9565f3f5/transformed/lifecycle-livedata-core-2.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/58d88302ad8d49be9b4860c4290be392/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/58d88302ad8d49be9b4860c4290be392/transformed/lifecycle-livedata-core-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f090362558520ef9be209c333fe0ef31/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/f090362558520ef9be209c333fe0ef31/transformed/lifecycle-livedata-2.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7f84b4da8fb40754637aace4661080b2/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/7f84b4da8fb40754637aace4661080b2/transformed/lifecycle-viewmodel-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/bca53d95d34dd45f2219c217559f8a64/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/bca53d95d34dd45f2219c217559f8a64/transformed/lifecycle-livedata-ktx-2.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/ee40b7b7111bbae179d97728273624f8/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/ee40b7b7111bbae179d97728273624f8/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/3be829cbb5fe47026cd4b01b50cf8e7f/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/rittik/.gradle/caches/8.10.2/transforms/3be829cbb5fe47026cd4b01b50cf8e7f/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/dd7a8c7ee6d7f142da82251d175a1662/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/dd7a8c7ee6d7f142da82251d175a1662/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/470a99b5204ee2230a4c81e46c944095/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/470a99b5204ee2230a4c81e46c944095/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/f627609c6ef7182ea943a7f8bcef3a53/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.1] /home/rittik/.gradle/caches/8.10.2/transforms/f627609c6ef7182ea943a7f8bcef3a53/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c16cc9161a4b0fc5296acc9a4791379/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c16cc9161a4b0fc5296acc9a4791379/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6e9b889ae3f1eba74e0ab5259353d40/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/f6e9b889ae3f1eba74e0ab5259353d40/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/63b36c930e966fa8d59ce857ffbac9d4/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/63b36c930e966fa8d59ce857ffbac9d4/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/dbf80340486dc3cd2f2ef481a5464cc4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/dbf80340486dc3cd2f2ef481a5464cc4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7cc961886f2c2cbb2564c4f62364b6a6/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/7cc961886f2c2cbb2564c4f62364b6a6/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1db95c906222462c20cd7f9096418103/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/1db95c906222462c20cd7f9096418103/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a1b7fc67565075a0b30a113232da259a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/a1b7fc67565075a0b30a113232da259a/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/e972668fe3bea1eb7602f1fe83b50093/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/e972668fe3bea1eb7602f1fe83b50093/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /home/rittik/AndroidStudioProjects/cred_manager/app/src/main/AndroidManifest.xml
-activity#com.google.firebase.auth.internal.GenericIdpActivity
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
-action#android.intent.action.VIEW
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
-category#android.intent.category.DEFAULT
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
-category#android.intent.category.BROWSABLE
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
-data
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
-	android:path
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
-	android:host
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
-	android:scheme
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
-activity#com.google.firebase.auth.internal.RecaptchaActivity
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
-	android:excludeFromRecents
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
-	android:launchMode
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
-	android:theme
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:66:9-72:19
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
-MERGED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:30:9-38:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:68:13-37
-	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:34:13-32
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:32:13-43
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:67:13-84
-meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
-ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
-	android:value
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/c872754a8d67d0bba0bdbcf53bf0532e/transformed/firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
-service#androidx.credentials.playservices.CredentialProviderMetadataHolder
-ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
-	android:enabled
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
-	android:exported
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
-	tools:ignore
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:28:13-60
-	android:name
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
-meta-data#androidx.credentials.CREDENTIAL_PROVIDER_KEY
-ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
-	android:value
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
-	android:name
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
-activity#androidx.credentials.playservices.HiddenActivity
-ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
-	android:fitsSystemWindows
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
-	android:enabled
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
-	android:exported
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
-	android:configChanges
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
-	android:theme
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
-	android:name
-		ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/rittik/.gradle/caches/8.10.2/transforms/dfa4b266ea661e7ba106ff3d70e711b1/transformed/credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
-	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:20.7.0] /home/rittik/.gradle/caches/8.10.2/transforms/077a1f37c1bc560ec22310ac11e94b07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
-uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
-	android:name
-		ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d92aec48260effaa81d0a46178f6227/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:22-95
-meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
-ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/dcbaa7c7093fd687d58f43dca5a39e0a/transformed/firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:25:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:27:13-37
-	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:26:13-43
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:28:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:24:13-77
-meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
-ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
-	android:value
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:37:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-common:21.0.0] /home/rittik/.gradle/caches/8.10.2/transforms/b40a187049ecb584225dee24968cbd29/transformed/firebase-common-21.0.0/AndroidManifest.xml:36:17-109
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rittik/.gradle/caches/8.10.2/transforms/a85bb54be9b1c48ac9f1cc65cebc39f6/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/b5cbe683b8fa8eca9eeb2ab8b4c74b7f/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rittik/.gradle/caches/8.10.2/transforms/84ec541ff39720fd6a069dbcfca519db/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/d18b298281df501e12bb3dce93a80710/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/rittik/.gradle/caches/8.10.2/transforms/8f4b4538c4b3c0961b0ad77d4f890355/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 permission#com.project.credmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 uses-permission#com.project.credmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/6602737b95165a71842e61cbf18226cd/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] /home/rittik/.gradle/caches/8.10.2/transforms/fdc11931f1afb5f405735e04bc0a117b/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/e100ca2982662e16413ee38193954aa4/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.3] /home/rittik/.gradle/caches/8.10.2/transforms/674c8fcd3b157464665c3d7c59d07582/transformed/lifecycle-process-2.9.3/AndroidManifest.xml:30:17-78
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
+ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
 	android:exported
-		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
 	tools:ignore
-		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:28:13-60
+		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:28:13-60
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
+		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/08636122c6f74784fac69b1f45104bed/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.3.0] /home/rittik/.gradle/caches/8.10.2/transforms/5c74345c97e8e09a08944b144bfc06e7/transformed/play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+		ADDED from [androidx.room:room-runtime-android:2.7.2] /home/rittik/.gradle/caches/8.10.2/transforms/8fce089568ae4cf5052a969c790e4b44/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1d7eb6e30373d7cd30f7eaa5271d3941/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/rittik/.gradle/caches/8.10.2/transforms/1004b8d400f23fce42d9a72483f4743e/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.project.credmanager.app-mergeDebugResources-45:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.project.credmanager.app-mergeDebugResources-37:/values-night-v8/values-night-v8.xml",
             "map": [
-                {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "23,24,25,26,27,28,29,56",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "1181,1251,1335,1419,1515,1617,1719,4701",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "1246,1330,1414,1510,1612,1714,1808,4785"
-                    }
-                },
                 {
                     "source": "/home/rittik/AndroidStudioProjects/cred_manager/app/src/main/res/values-night/themes.xml",
                     "from": {
@@ -40,7 +23,24 @@
                     }
                 },
                 {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "23,24,25,26,27,28,29,56",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "1181,1251,1335,1419,1515,1617,1719,4701",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "1246,1330,1414,1510,1612,1714,1808,4785"
+                    }
+                },
+                {
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

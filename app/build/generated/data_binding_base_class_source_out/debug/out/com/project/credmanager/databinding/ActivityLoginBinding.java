@@ -22,6 +22,12 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final EditText email;
+
+  @NonNull
+  public final TextView emailText;
+
+  @NonNull
   public final TextView forgotPass;
 
   @NonNull
@@ -51,11 +57,14 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView registerBtn;
 
-  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull TextView forgotPass,
-      @NonNull TextView header, @NonNull ImageView img, @NonNull TextView loginBtn,
-      @NonNull RelativeLayout main, @NonNull TextView passText, @NonNull EditText password,
-      @NonNull EditText phone, @NonNull TextView phoneText, @NonNull TextView registerBtn) {
+  private ActivityLoginBinding(@NonNull RelativeLayout rootView, @NonNull EditText email,
+      @NonNull TextView emailText, @NonNull TextView forgotPass, @NonNull TextView header,
+      @NonNull ImageView img, @NonNull TextView loginBtn, @NonNull RelativeLayout main,
+      @NonNull TextView passText, @NonNull EditText password, @NonNull EditText phone,
+      @NonNull TextView phoneText, @NonNull TextView registerBtn) {
     this.rootView = rootView;
+    this.email = email;
+    this.emailText = emailText;
     this.forgotPass = forgotPass;
     this.header = header;
     this.img = img;
@@ -95,6 +104,18 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.email;
+      EditText email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
+        break missingId;
+      }
+
+      id = R.id.emailText;
+      TextView emailText = ViewBindings.findChildViewById(rootView, id);
+      if (emailText == null) {
+        break missingId;
+      }
+
       id = R.id.forgotPass;
       TextView forgotPass = ViewBindings.findChildViewById(rootView, id);
       if (forgotPass == null) {
@@ -151,8 +172,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((RelativeLayout) rootView, forgotPass, header, img, loginBtn,
-          main, passText, password, phone, phoneText, registerBtn);
+      return new ActivityLoginBinding((RelativeLayout) rootView, email, emailText, forgotPass,
+          header, img, loginBtn, main, passText, password, phone, phoneText, registerBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

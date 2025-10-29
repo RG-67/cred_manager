@@ -1,21 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.project.credmanager.app-mergeDebugResources-45:/values-v23/values-v23.xml",
+            "outputFile": "com.project.credmanager.app-mergeDebugResources-37:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/res/values-v23/values-v23.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
-                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
-                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
-                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
-                    }
-                },
-                {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/eab441502d70f089e3542d182f1ffb8d/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/13861a4b74dc456c0fd7370600663f26/transformed/material-1.12.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +23,18 @@
                     }
                 },
                 {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/199b3bfe67cedbafd01f89e5904adb5b/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1225,1975,2094,2221,2443,2667,2782,2889,3002",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1220,1970,2089,2216,2438,2662,2777,2884,2997,3227"
+                    }
+                },
+                {
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/f6e9b889ae3f1eba74e0ab5259353d40/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

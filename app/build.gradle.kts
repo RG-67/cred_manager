@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp")
-    id("com.google.gms.google-services")
+//    id("com.google.gms.google-services")
 }
 
 android {
@@ -92,8 +92,8 @@ dependencies {
     // adding firebase dependencies for app version control
 //    implementation(platform(libs.firebase.bom))
 //    implementation(libs.com.google.firebase.firebase.auth)
-    implementation(libs.google.firebase.auth)
+//    implementation(libs.google.firebase.auth)
     // firebase authentication
-    implementation(libs.firebase.auth)
+//    implementation(libs.firebase.auth)
 
 }

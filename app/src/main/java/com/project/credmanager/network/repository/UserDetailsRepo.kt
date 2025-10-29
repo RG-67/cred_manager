@@ -7,6 +7,7 @@ import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.Insert
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserRes
 import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.SendOtpRes
 import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.VerifyOtpRes
+import com.project.credmanager.model.UserDetailsApiModel.PasswordChangeRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserRes
 import com.project.credmanager.network.ApiInterface
@@ -98,6 +99,26 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
     suspend fun verifyOtp(email: String, otp: String): Result<VerifyOtpRes> {
         return try {
             val response = apiInterface.verifyOtp(email, otp)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Error response body"))
+            } else {
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
+    }
+
+    suspend fun passwordChange(
+        email: String,
+        phone: String,
+        password: String
+    ): Result<PasswordChangeRes> {
+        return try {
+            val response = apiInterface.passwordChange(email, phone, password)
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it)

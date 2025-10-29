@@ -1,38 +1,42 @@
 [
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_login.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_login.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_forgot_pass.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_forgot_pass.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/item_layout.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/item_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_profile.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_main.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_main.xml"
+        "merged": "com.project.credmanager.app-mergeDebugResources-38:/layout/activity_forgot_pass.xml",
+        "source": "com.project.credmanager.app-main-41:/layout/activity_forgot_pass.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_add_cred.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_add_cred.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/network_monitor_layout.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/network_monitor_layout.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/progress_dialog_layout.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/progress_dialog_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_register.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_register.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_profile.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_profile.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/item_layout.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/item_layout.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_forgot_pass.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_forgot_pass.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_login.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_login.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/network_monitor_layout.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/network_monitor_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_add_cred.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_add_cred.xml"
     },
     {
-        "merged": "com.project.credmanager.app-mergeDebugResources-46:/layout/activity_register.xml",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_register.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/activity_main.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-mergeDebugResources-38:/layout/progress_dialog_layout.xml",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/progress_dialog_layout.xml"
     }
 ]

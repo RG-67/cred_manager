@@ -85,6 +85,17 @@ object HandleUserInput {
         return Pair("", true)
     }
 
+    fun checkNewPassInput(newPassword: String, confirmPassword: String): Pair<String, Boolean> {
+        if (newPassword.isEmpty()) {
+            return Pair("Enter new password", false)
+        } else if (confirmPassword.isEmpty()) {
+            return Pair("Enter confirm password", false)
+        } else if (newPassword != confirmPassword) {
+            return Pair("Password not match", false)
+        }
+        return Pair("", true)
+    }
+
     fun hideKeyboard(context: Context, view: View) {
         val inputMethodManager =
             context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

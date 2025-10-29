@@ -1,182 +1,190 @@
 [
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_eye_close.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/eye_close.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/font_grotesk_egular.ttf.flat",
-        "source": "com.project.credmanager.app-main-49:/font/grotesk_egular.ttf"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_network_not_available.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/network_not_available.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/xml_data_extraction_rules.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/xml/data_extraction_rules.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_logout.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/logout.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_item_layout.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/item_layout.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_flag.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/flag.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_logout.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/logout.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_not_found.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/not_found.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/font_grotesk_egular.ttf.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/font/grotesk_egular.ttf"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_register.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_register.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_profile.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/profile.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_login.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_login.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_main.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_main.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_add_cred.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_add_cred.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_search.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/search.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_search.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/search.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_eye_open.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/eye_open.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/xml_backup_rules.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/xml/backup_rules.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_lock.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/lock.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/ic_launcher_background.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_eye_open.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/eye_open.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_profile.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/profile.png"
+        "merged": "com.project.credmanager.app-debug-39:/layout_activity_forgot_pass.xml.flat",
+        "source": "com.project.credmanager.app-main-41:/layout/activity_forgot_pass.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_forward_arrow.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/forward_arrow.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_flag.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/flag.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_not_found.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/not_found.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_square_5_bg.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/square_5_bg.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_profile.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_add_cred.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_add_cred.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_network_monitor_layout.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/network_monitor_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_network_monitor_layout.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/network_monitor_layout.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_logo.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/logo.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_forgot_pass.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_forgot_pass.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_eye_close.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/eye_close.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_login.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_login.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_main.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_main.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_progress_dialog_layout.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/progress_dialog_layout.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_forward_arrow.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/forward_arrow.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/xml_backup_rules.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_progress_dialog_layout.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/progress_dialog_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_back_arrow.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/back_arrow.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_lock.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/lock.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_logo.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/logo.png"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_network_not_available.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/network_not_available.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_add.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/add.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_square_5_bg.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/square_5_bg.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_forgot_pass.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_forgot_pass.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_activity_profile.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/activity_profile.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/drawable_back_arrow.png.flat",
-        "source": "com.project.credmanager.app-main-49:/drawable/back_arrow.png"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/layout_activity_register.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/layout/activity_register.xml"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/layout_item_layout.xml.flat",
-        "source": "com.project.credmanager.app-main-49:/layout/item_layout.xml"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.project.credmanager.app-debug-47:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.project.credmanager.app-main-49:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_gmail.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/gmail.png"
+    },
+    {
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-debug-39:/drawable_add.png.flat",
+        "source": "/home/rittik/.gradle/daemon/8.10.2/com.project.credmanager.app-main-41:/drawable/add.png"
     }
 ]

@@ -15,12 +15,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.FirebaseException
+/*import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthOptions
-import com.google.firebase.auth.PhoneAuthProvider
+import com.google.firebase.auth.PhoneAuthProvider*/
 import com.project.credmanager.R
 import com.project.credmanager.databinding.ActivityForgotPassBinding
 import com.project.credmanager.network.ApiClient
@@ -53,18 +53,53 @@ class ForgotPassActivity : AppCompatActivity() {
         )[UserDetailsApiViewModel::class.java]
 
         userDetailsApiViewModel.getUserByPhone.observe(this) { user ->
-
+            userDetailsApiViewModel.sendOtp(user.email)
         }
 
         userDetailsApiViewModel.errorUsersByPhone.observe(this) {
+            Loading.dismissLoading()
             Snackbar.make(this, binding.root, "Phone or email not exists", Snackbar.LENGTH_SHORT)
                 .show()
             setEnable()
         }
 
-        binding.submitBtn.setOnClickListener {
-            handleUserInput()
+        userDetailsApiViewModel.sendOtp.observe(this) { msg ->
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+            binding.numberLin.visibility = View.GONE
+            binding.verifyLin.visibility = View.VISIBLE
         }
+
+        userDetailsApiViewModel.errorSendOtp.observe(this) {
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
+        }
+
+        userDetailsApiViewModel.verifyOtp.observe(this) {
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
+            binding.verifyLin.visibility = View.GONE
+            binding.newPasswordLin.visibility = View.VISIBLE
+        }
+
+        userDetailsApiViewModel.errorVerifyOtp.observe(this) {
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
+        }
+
+        userDetailsApiViewModel.passwordChange.observe(this) {
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
+            finish()
+        }
+
+        userDetailsApiViewModel.errorPasswordChange.observe(this) {
+            Loading.dismissLoading()
+            Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
+        }
+
+
+        handleUserInput()
 
     }
 
@@ -94,21 +129,26 @@ class ForgotPassActivity : AppCompatActivity() {
             } else {
                 /*val credential = PhoneAuthProvider.getCredential(otp, enteredOtp)
                 signInWithCredential(credential)*/
+                Loading.showLoading(this)
+                userDetailsApiViewModel.verifyOtp(binding.email.text.toString(), enteredOtp)
             }
         }
 
         binding.saveBtn.setOnClickListener {
-            if (binding.newPassword.text.toString().isEmpty()) {
-                Snackbar.make(this, binding.root, "Enter new password", Snackbar.LENGTH_SHORT)
-                    .show()
-            } else if (binding.confirmPassword.text.toString().isEmpty()) {
-                Snackbar.make(this, binding.root, "Enter confirm password", Snackbar.LENGTH_SHORT)
-                    .show()
-            } else if (binding.newPassword.text.toString() != binding.confirmPassword.text.toString()) {
-                Snackbar.make(this, binding.root, "Password not match", Snackbar.LENGTH_SHORT)
-                    .show()
-            } else {
+            val newPass = binding.newPassword.text.toString()
+            val conPass = binding.confirmPassword.text.toString()
+            val result = HandleUserInput.checkNewPassInput(newPass, conPass)
 
+            if (result.second) {
+                Loading.showLoading(this)
+                val bCryptPass = HandleUserInput.bcryptHash(conPass)
+                userDetailsApiViewModel.passwordChange(
+                    binding.email.text.toString(),
+                    binding.phoneNumber.text.toString(),
+                    bCryptPass
+                )
+            } else {
+                Snackbar.make(this, binding.root, result.first, Snackbar.LENGTH_SHORT).show()
             }
         }
 

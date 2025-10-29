@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.project.credmanager.app-mergeDebugResources-45:/values-port/values-port.xml",
+            "outputFile": "com.project.credmanager.app-mergeDebugResources-37:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/0feb446db47a485381170d7ec43b2297/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/8820e98760020e403b321f0a0ba31c45/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

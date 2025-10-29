@@ -11,6 +11,7 @@ object ApiConstants {
     const val updateUser = "user/updateUser"
     const val sendOtp = "user/sendOtp"
     const val verifyOtp = "user/verifyOtp"
+    const val passwordChange = "user/passwordChange"
 
 
     /*user cred api*/

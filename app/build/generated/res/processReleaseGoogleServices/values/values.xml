@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">282842251685</string>
-    <string name="google_api_key" translatable="false">AIzaSyCKEVPcV7VAKGDG4250xuMSMhkldo6JQ8g</string>
-    <string name="google_app_id" translatable="false">1:282842251685:android:0194eec99303235f7ae84c</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCKEVPcV7VAKGDG4250xuMSMhkldo6JQ8g</string>
-    <string name="google_storage_bucket" translatable="false">credmanager-a630e.firebasestorage.app</string>
-    <string name="project_id" translatable="false">credmanager-a630e</string>
-</resources>

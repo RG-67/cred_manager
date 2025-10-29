@@ -28,6 +28,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText conPassword;
 
   @NonNull
+  public final EditText email;
+
+  @NonNull
+  public final TextView emailText;
+
+  @NonNull
   public final TextView header;
 
   @NonNull
@@ -55,13 +61,15 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextView registerBtn;
 
   private ActivityRegisterBinding(@NonNull RelativeLayout rootView, @NonNull TextView conPassText,
-      @NonNull EditText conPassword, @NonNull TextView header, @NonNull ImageView img,
-      @NonNull TextView loginBtn, @NonNull RelativeLayout main, @NonNull TextView passText,
-      @NonNull EditText password, @NonNull EditText phone, @NonNull TextView phoneText,
-      @NonNull TextView registerBtn) {
+      @NonNull EditText conPassword, @NonNull EditText email, @NonNull TextView emailText,
+      @NonNull TextView header, @NonNull ImageView img, @NonNull TextView loginBtn,
+      @NonNull RelativeLayout main, @NonNull TextView passText, @NonNull EditText password,
+      @NonNull EditText phone, @NonNull TextView phoneText, @NonNull TextView registerBtn) {
     this.rootView = rootView;
     this.conPassText = conPassText;
     this.conPassword = conPassword;
+    this.email = email;
+    this.emailText = emailText;
     this.header = header;
     this.img = img;
     this.loginBtn = loginBtn;
@@ -109,6 +117,18 @@ public final class ActivityRegisterBinding implements ViewBinding {
       id = R.id.conPassword;
       EditText conPassword = ViewBindings.findChildViewById(rootView, id);
       if (conPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.email;
+      EditText email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
+        break missingId;
+      }
+
+      id = R.id.emailText;
+      TextView emailText = ViewBindings.findChildViewById(rootView, id);
+      if (emailText == null) {
         break missingId;
       }
 
@@ -162,8 +182,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((RelativeLayout) rootView, conPassText, conPassword,
-          header, img, loginBtn, main, passText, password, phone, phoneText, registerBtn);
+      return new ActivityRegisterBinding((RelativeLayout) rootView, conPassText, conPassword, email,
+          emailText, header, img, loginBtn, main, passText, password, phone, phoneText,
+          registerBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

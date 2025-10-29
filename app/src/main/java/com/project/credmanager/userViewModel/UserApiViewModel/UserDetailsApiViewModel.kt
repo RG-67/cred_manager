@@ -62,6 +62,12 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
     private val _errorVerifyOtp = MutableLiveData<String>()
     val errorVerifyOtp: MutableLiveData<String> = _errorVerifyOtp
 
+    private val _passwordChange = MutableLiveData<String>()
+    val passwordChange: MutableLiveData<String> = _passwordChange
+
+    private val _errorPasswordChange = MutableLiveData<String>()
+    val errorPasswordChange: MutableLiveData<String> = _errorPasswordChange
+
 
     fun getAllUser() {
         viewModelScope.launch {
@@ -122,6 +128,30 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
                 else _errorSendOtp.value = res.msg
             }.onFailure { throwable ->
                 _errorSendOtp.value = throwable.message ?: "Unknown error from sendOtp response"
+            }
+        }
+    }
+
+    fun verifyOtp(email: String, otp: String) {
+        viewModelScope.launch {
+            val response = userDetailsRepo!!.verifyOtp(email, otp)
+            response.onSuccess {
+                if (it.status) _verifyOtp.value = it.msg
+                else _errorVerifyOtp.value = it.msg
+            }.onFailure {
+                _errorVerifyOtp.value = it.message ?: "Unknown error from verifyOtp response"
+            }
+        }
+    }
+
+    fun passwordChange(email: String, phone: String, password: String) {
+        viewModelScope.launch {
+            val response = userDetailsRepo!!.passwordChange(email, phone, password)
+            response.onSuccess {
+                if (it.status) _passwordChange.value = it.msg
+                else _errorPasswordChange.value = it.msg
+            }.onFailure {
+                _errorPasswordChange.value = it.message ?: "Unknown error from verifyOtp response"
             }
         }
     }

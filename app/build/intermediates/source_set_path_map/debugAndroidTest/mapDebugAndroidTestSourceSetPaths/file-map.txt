@@ -1,7 +1,7 @@
-com.project.credmanager.test.app-core-1.7.0-0 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\10beb521dee977fefdb158c02b616c51\transformed\core-1.7.0\res
-com.project.credmanager.test.app-core-testing-2.2.0-1 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\7ae8425c6073559e672eb86951bc6ba9\transformed\core-testing-2.2.0\res
-com.project.credmanager.test.app-core-runtime-2.2.0-2 C:\Users\GTOEW-21\.gradle\caches\8.10.2\transforms\bdf8291360fb2ebb98d33ef9d667e74b\transformed\core-runtime-2.2.0\res
-com.project.credmanager.test.app-androidTest-3 D:\RITTIK\CredManager\app\build\generated\res\resValues\androidTest\debug
-com.project.credmanager.test.app-mergeDebugAndroidTestResources-4 D:\RITTIK\CredManager\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.project.credmanager.test.app-mergeDebugAndroidTestResources-5 D:\RITTIK\CredManager\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.project.credmanager.test.app-debugAndroidTest-6 D:\RITTIK\CredManager\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.project.credmanager.test.app-core-1.7.0-0 /home/rittik/.gradle/caches/8.10.2/transforms/4cf9bdab0ee401c4f3fa4fd91f448e91/transformed/core-1.7.0/res
+com.project.credmanager.test.app-core-testing-2.2.0-1 /home/rittik/.gradle/caches/8.10.2/transforms/75af6cc2ef42b2a9da287784bdf60fe5/transformed/core-testing-2.2.0/res
+com.project.credmanager.test.app-core-runtime-2.2.0-2 /home/rittik/.gradle/caches/8.10.2/transforms/dbf80340486dc3cd2f2ef481a5464cc4/transformed/core-runtime-2.2.0/res
+com.project.credmanager.test.app-androidTest-3 /home/rittik/AndroidStudioProjects/cred_manager/app/build/generated/res/resValues/androidTest/debug
+com.project.credmanager.test.app-mergeDebugAndroidTestResources-4 /home/rittik/AndroidStudioProjects/cred_manager/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.project.credmanager.test.app-mergeDebugAndroidTestResources-5 /home/rittik/AndroidStudioProjects/cred_manager/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.project.credmanager.test.app-debugAndroidTest-6 /home/rittik/AndroidStudioProjects/cred_manager/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

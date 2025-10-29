@@ -33,6 +33,9 @@ public final class ActivityForgotPassBinding implements ViewBinding {
   public final EditText confirmPassword;
 
   @NonNull
+  public final EditText email;
+
+  @NonNull
   public final TextView enterOtpText;
 
   @NonNull
@@ -85,9 +88,9 @@ public final class ActivityForgotPassBinding implements ViewBinding {
 
   private ActivityForgotPassBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView changePassText, @NonNull ImageView conFirmPass,
-      @NonNull EditText confirmPassword, @NonNull TextView enterOtpText, @NonNull EditText fifthOtp,
-      @NonNull EditText firstOtp, @NonNull EditText forthOtp, @NonNull RelativeLayout main,
-      @NonNull ImageView newPass, @NonNull EditText newPassword,
+      @NonNull EditText confirmPassword, @NonNull EditText email, @NonNull TextView enterOtpText,
+      @NonNull EditText fifthOtp, @NonNull EditText firstOtp, @NonNull EditText forthOtp,
+      @NonNull RelativeLayout main, @NonNull ImageView newPass, @NonNull EditText newPassword,
       @NonNull LinearLayout newPasswordLin, @NonNull LinearLayout numberLin,
       @NonNull EditText phoneNumber, @NonNull Button saveBtn, @NonNull EditText secondOtp,
       @NonNull EditText sixthOtp, @NonNull Button submitBtn, @NonNull EditText thirdOtp,
@@ -96,6 +99,7 @@ public final class ActivityForgotPassBinding implements ViewBinding {
     this.changePassText = changePassText;
     this.conFirmPass = conFirmPass;
     this.confirmPassword = confirmPassword;
+    this.email = email;
     this.enterOtpText = enterOtpText;
     this.fifthOtp = fifthOtp;
     this.firstOtp = firstOtp;
@@ -157,6 +161,12 @@ public final class ActivityForgotPassBinding implements ViewBinding {
       id = R.id.confirmPassword;
       EditText confirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.email;
+      EditText email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
         break missingId;
       }
 
@@ -259,9 +269,9 @@ public final class ActivityForgotPassBinding implements ViewBinding {
       }
 
       return new ActivityForgotPassBinding((RelativeLayout) rootView, changePassText, conFirmPass,
-          confirmPassword, enterOtpText, fifthOtp, firstOtp, forthOtp, main, newPass, newPassword,
-          newPasswordLin, numberLin, phoneNumber, saveBtn, secondOtp, sixthOtp, submitBtn, thirdOtp,
-          verifyBtn, verifyLin);
+          confirmPassword, email, enterOtpText, fifthOtp, firstOtp, forthOtp, main, newPass,
+          newPassword, newPasswordLin, numberLin, phoneNumber, saveBtn, secondOtp, sixthOtp,
+          submitBtn, thirdOtp, verifyBtn, verifyLin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

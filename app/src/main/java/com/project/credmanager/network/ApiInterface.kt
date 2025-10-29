@@ -10,6 +10,7 @@ import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.Insert
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserRes
 import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.SendOtpRes
 import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.VerifyOtpRes
+import com.project.credmanager.model.UserDetailsApiModel.PasswordChangeRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
@@ -74,6 +75,13 @@ interface ApiInterface {
         @Query("email") email: String,
         @Query("otp") otp: String
     ): Response<VerifyOtpRes>
+
+    @GET(ApiConstants.passwordChange)
+    suspend fun passwordChange(
+        @Query("email") email: String,
+        @Query("phone") phone: String,
+        @Query("password") password: String
+    ): Response<PasswordChangeRes>
     /*-----------------------------  *****  ------------------------------------*/
 
 }

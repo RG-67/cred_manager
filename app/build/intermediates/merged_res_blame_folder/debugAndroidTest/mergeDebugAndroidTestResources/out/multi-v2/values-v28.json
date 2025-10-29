@@ -4,7 +4,7 @@
             "outputFile": "com.project.credmanager.test.app-mergeDebugAndroidTestResources-4:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\GTOEW-21\\.gradle\\caches\\8.10.2\\transforms\\10beb521dee977fefdb158c02b616c51\\transformed\\core-1.7.0\\res\\values-v28\\values.xml",
+                    "source": "/home/rittik/.gradle/caches/8.10.2/transforms/4cf9bdab0ee401c4f3fa4fd91f448e91/transformed/core-1.7.0/res/values-v28/values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
