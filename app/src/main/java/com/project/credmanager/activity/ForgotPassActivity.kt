@@ -56,6 +56,12 @@ class ForgotPassActivity : AppCompatActivity() {
 
         }
 
+        userDetailsApiViewModel.errorUsersByPhone.observe(this) {
+            Snackbar.make(this, binding.root, "Phone or email not exists", Snackbar.LENGTH_SHORT)
+                .show()
+            setEnable()
+        }
+
         binding.submitBtn.setOnClickListener {
             handleUserInput()
         }
@@ -69,11 +75,12 @@ class ForgotPassActivity : AppCompatActivity() {
 
             val result = HandleUserInput.checkVerifyPassInput(number, email)
 
-            if (result.second) {
+            if (!result.second) {
                 Snackbar.make(this, binding.root, result.first, Snackbar.LENGTH_SHORT)
                     .show()
             } else {
-
+                setDisable()
+                sendOtp()
             }
         }
 
@@ -120,6 +127,32 @@ class ForgotPassActivity : AppCompatActivity() {
         binding.fifthOtp.addTextChangedListener(textWatcher)
         binding.sixthOtp.addTextChangedListener(textWatcher)
 
+    }
+
+    private fun setEnable() {
+        binding.submitBtn.isClickable = true
+        binding.submitBtn.isEnabled = true
+        binding.phoneNumber.isEnabled = true
+        binding.phoneNumber.isClickable = true
+        binding.email.isEnabled = true
+        binding.email.isClickable = true
+    }
+
+    private fun setDisable() {
+        binding.submitBtn.isClickable = false
+        binding.submitBtn.isEnabled = false
+        binding.phoneNumber.isEnabled = false
+        binding.phoneNumber.isClickable = false
+        binding.email.isEnabled = false
+        binding.email.isClickable = false
+    }
+
+    private fun sendOtp() {
+        Loading.showLoading(this)
+        userDetailsApiViewModel.getUserByPhone(
+            phone = binding.phoneNumber.text.toString(),
+            email = binding.email.text.toString()
+        )
     }
 
     private val textWatcher = object : TextWatcher {

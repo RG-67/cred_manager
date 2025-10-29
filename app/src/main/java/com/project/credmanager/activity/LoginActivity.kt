@@ -111,7 +111,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         userDetailsApiViewModel.errorUsersByPhone.observe(this) { msg ->
-            Snackbar.make(this, binding.root, msg, Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(this, binding.root, "User not exists", Snackbar.LENGTH_SHORT).show()
         }
 
         binding.phone.addTextChangedListener(textWatcher)

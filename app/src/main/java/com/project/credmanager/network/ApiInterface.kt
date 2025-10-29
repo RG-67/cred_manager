@@ -8,6 +8,8 @@ import com.project.credmanager.model.UserDetailsApiModel.InsertUserCredReqRes.In
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserCredReqRes.InsertUserCredRes
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserReq
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserRes
+import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.SendOtpRes
+import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.VerifyOtpRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserCredReqRes.UpdateUserCredRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
@@ -64,7 +66,14 @@ interface ApiInterface {
     @DELETE(ApiConstants.deleteUserCred)
     suspend fun deleteUserCred(@QueryMap map: HashMap<String, String>): Response<DeleteUserCredRes>
 
-    @
+    @GET(ApiConstants.sendOtp)
+    suspend fun sendOtp(@Query("email") email: String): Response<SendOtpRes>
+
+    @GET(ApiConstants.verifyOtp)
+    suspend fun verifyOtp(
+        @Query("email") email: String,
+        @Query("otp") otp: String
+    ): Response<VerifyOtpRes>
     /*-----------------------------  *****  ------------------------------------*/
 
 }

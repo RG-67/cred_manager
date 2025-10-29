@@ -5,6 +5,8 @@ import com.project.credmanager.model.UserDetailsApiModel.GetAllUserRes
 import com.project.credmanager.model.UserDetailsApiModel.GetUserByPhoneRes
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserReq
 import com.project.credmanager.model.UserDetailsApiModel.InsertUserReqRes.InsertUserRes
+import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.SendOtpRes
+import com.project.credmanager.model.UserDetailsApiModel.OtpVerificationReqRes.VerifyOtpRes
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserReq
 import com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UpdateUserRes
 import com.project.credmanager.network.ApiInterface
@@ -68,6 +70,38 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
                 response.body()?.let {
                     Result.success(it)
                 } ?: Result.failure(Exception("Empty response body"))
+            } else {
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
+    }
+
+    suspend fun sendOtp(email: String): Result<SendOtpRes> {
+        return try {
+            val response = apiInterface.sendOtp(email)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Error response body"))
+            } else {
+                val jsonObject = JSONObject(response.errorBody()?.string().toString())
+                Result.failure(Exception(jsonObject.optString("msg")))
+            }
+        } catch (e: Exception) {
+            Result.failure(Exception(e))
+        }
+    }
+
+    suspend fun verifyOtp(email: String, otp: String): Result<VerifyOtpRes> {
+        return try {
+            val response = apiInterface.verifyOtp(email, otp)
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    Result.success(it)
+                } ?: Result.failure(Exception("Error response body"))
             } else {
                 val jsonObject = JSONObject(response.errorBody()?.string().toString())
                 Result.failure(Exception(jsonObject.optString("msg")))

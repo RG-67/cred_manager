@@ -83,12 +83,28 @@ class RegisterActivity : AppCompatActivity() {
 
             if (result.second) {
                 binding.registerBtn.isEnabled = false
-                userDetailsApiViewModel.getAllUser()
+                userDetailsApiViewModel.getUserByPhone(phone, email)
+//                userDetailsApiViewModel.getAllUser()
 //                handleRegister()
             } else {
                 binding.registerBtn.isEnabled = true
                 Snackbar.make(this, binding.root, result.first, Snackbar.LENGTH_SHORT).show()
             }
+        }
+
+        userDetailsApiViewModel.getUserByPhone.observe(this) { user ->
+            Loading.dismissLoading()
+            Snackbar.make(
+                this,
+                binding.root,
+                "Phone or email already exists",
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
+
+        userDetailsApiViewModel.errorUsersByPhone.observe(this) { user ->
+            Loading.showLoading(this)
+            insertUser(binding.password.text.toString())
         }
 
         userDetailsApiViewModel.users.observe(this) { user ->

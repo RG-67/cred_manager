@@ -9,6 +9,8 @@ object ApiConstants {
     const val insertUser = "user/insertUser"
     const val getUserByPhone = "user/getUserByPhone"
     const val updateUser = "user/updateUser"
+    const val sendOtp = "user/sendOtp"
+    const val verifyOtp = "user/verifyOtp"
 
 
     /*user cred api*/

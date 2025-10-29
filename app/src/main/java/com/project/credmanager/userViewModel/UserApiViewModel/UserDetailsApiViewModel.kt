@@ -39,8 +39,8 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
     private val _getUserByPhone = MutableLiveData<UserDetails>()
     val getUserByPhone: LiveData<UserDetails> = _getUserByPhone
 
-    private val _errorUsersByPhone = MutableLiveData<String>()
-    val errorUsersByPhone: LiveData<String> = _errorUsersByPhone
+    private val _errorUsersByPhone = MutableLiveData<Boolean>()
+    val errorUsersByPhone: LiveData<Boolean> = _errorUsersByPhone
 
     private val _updatedUser =
         MutableLiveData<com.project.credmanager.model.UserDetailsApiModel.UpdateUserReqRes.UserDetails>()
@@ -49,6 +49,19 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
 
     private val _errorUpdateUsers = MutableLiveData<String>()
     val errorUpdateUsers: LiveData<String> = _errorUpdateUsers
+
+    private val _sendOtp = MutableLiveData<String>()
+    val sendOtp: MutableLiveData<String> = _sendOtp
+
+    private val _errorSendOtp = MutableLiveData<String>()
+    val errorSendOtp: MutableLiveData<String> = _errorSendOtp
+
+    private val _verifyOtp = MutableLiveData<String>()
+    val verifyOtp: MutableLiveData<String> = _verifyOtp
+
+    private val _errorVerifyOtp = MutableLiveData<String>()
+    val errorVerifyOtp: MutableLiveData<String> = _errorVerifyOtp
+
 
     fun getAllUser() {
         viewModelScope.launch {
@@ -69,7 +82,8 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
                 if (res.status) _insertedUser.value = res
                 else _errorInsertUsers.value = res.msg
             }.onFailure { throwable ->
-                _errorInsertUsers.value = throwable.message ?: "Unknown error from insert user response"
+                _errorInsertUsers.value =
+                    throwable.message ?: "Unknown error from insert user response"
             }
         }
     }
@@ -79,9 +93,10 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
             val result = userDetailsRepo!!.getUserByPhone(phone, email)
             result.onSuccess { res ->
                 if (res.status) _getUserByPhone.value = res.data
-                else _errorUsersByPhone.value = res.msg
+                else _errorUsersByPhone.value = false
             }.onFailure { throwable ->
-                _errorUsersByPhone.value = throwable.message ?: "Unknown error from getUserByPhone response"
+//                _errorUsersByPhone.value = throwable.message ?: "Unknown error from getUserByPhone response"
+                _errorUsersByPhone.value = false
             }
         }
     }
@@ -93,7 +108,20 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
                 if (res.status) _updatedUser.value = res.data
                 else _errorUpdateUsers.value = res.msg
             }.onFailure { throwable ->
-                _errorUpdateUsers.value = throwable.message ?: "Unknown error from updateUser response"
+                _errorUpdateUsers.value =
+                    throwable.message ?: "Unknown error from updateUser response"
+            }
+        }
+    }
+
+    fun sendOtp(email: String) {
+        viewModelScope.launch {
+            val response = userDetailsRepo!!.sendOtp(email)
+            response.onSuccess { res ->
+                if (res.status) _sendOtp.value = res.msg
+                else _errorSendOtp.value = res.msg
+            }.onFailure { throwable ->
+                _errorSendOtp.value = throwable.message ?: "Unknown error from sendOtp response"
             }
         }
     }
