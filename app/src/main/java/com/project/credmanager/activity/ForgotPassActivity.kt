@@ -157,7 +157,7 @@ class ForgotPassActivity : AppCompatActivity() {
         }
 
         binding.conFirmPass.setOnClickListener {
-            setPassVisibility(binding.confirmPassword, binding.newPass)
+            setPassVisibility(binding.confirmPassword, binding.conFirmPass)
         }
 
         binding.firstOtp.addTextChangedListener(textWatcher)
