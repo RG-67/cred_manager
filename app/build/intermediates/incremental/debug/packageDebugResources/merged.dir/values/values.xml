@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="charcoal">#36454F</color>
+    <color name="green">#008000</color>
+    <color name="ic_launcher_background">#FDFDFD</color>
+    <color name="lightMain">#E2EEF8</color>
+    <color name="main">#60b7fe</color>
+    <color name="red">#FF0000</color>
+    <color name="seconMain">#6EB8F4</color>
+    <color name="thirdMain">#95CBF8</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_credential">Add Credential</string>
+    <string name="app_name">Cred Manager</string>
+    <string name="change_password">Change the password for number %s and email id %s</string>
+    <string name="enter_mobile_number_for_password_change">Please enter your 10 digit mobile number and email address</string>
+    <string name="enter_otp">Please enter the 6-digit OTP sent to your email address</string>
+    <string name="profile">Profile</string>
+    <style name="Base.Theme.CredManager" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/seconMain</item>
+        <item name="colorPrimaryVariant">@color/main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/seconMain</item>
+        <item name="colorSecondaryVariant">@color/main</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <item name="fontFamily">@font/grotesk_egular</item>
+        
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" ns1:targetapi="35">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+    <style name="Theme.CredManager" parent="Base.Theme.CredManager"/>
+</resources>

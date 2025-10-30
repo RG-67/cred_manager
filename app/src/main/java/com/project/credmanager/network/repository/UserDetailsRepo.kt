@@ -80,9 +80,9 @@ class UserDetailsRepo(private val apiInterface: ApiInterface) {
         }
     }
 
-    suspend fun sendOtp(email: String): Result<SendOtpRes> {
+    suspend fun sendOtp(email: String, otp: String): Result<SendOtpRes> {
         return try {
-            val response = apiInterface.sendOtp(email)
+            val response = apiInterface.sendOtp(email, otp)
             if (response.isSuccessful) {
                 response.body()?.let {
                     Result.success(it)

@@ -120,9 +120,9 @@ class UserDetailsApiViewModel(private val userDetailsRepo: UserDetailsRepo?) : V
         }
     }
 
-    fun sendOtp(email: String) {
+    fun sendOtp(email: String, otp: String) {
         viewModelScope.launch {
-            val response = userDetailsRepo!!.sendOtp(email)
+            val response = userDetailsRepo!!.sendOtp(email, otp)
             response.onSuccess { res ->
                 if (res.status) _sendOtp.value = res.msg
                 else _errorSendOtp.value = res.msg

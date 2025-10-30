@@ -35,8 +35,9 @@ class ForgotPassActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityForgotPassBinding
 
-    //    private var otp = ""
-//    private var auth: FirebaseAuth? = null
+    private var otp = ""
+
+    //    private var auth: FirebaseAuth? = null
     private lateinit var userDetailsApiViewModel: UserDetailsApiViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,7 +54,8 @@ class ForgotPassActivity : AppCompatActivity() {
         )[UserDetailsApiViewModel::class.java]
 
         userDetailsApiViewModel.getUserByPhone.observe(this) { user ->
-            userDetailsApiViewModel.sendOtp(user.email)
+            otp = (100000..999999).random().toString()
+            userDetailsApiViewModel.sendOtp(user.email, otp)
         }
 
         userDetailsApiViewModel.errorUsersByPhone.observe(this) {
@@ -75,17 +77,17 @@ class ForgotPassActivity : AppCompatActivity() {
             Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
         }
 
-        userDetailsApiViewModel.verifyOtp.observe(this) {
+        /*userDetailsApiViewModel.verifyOtp.observe(this) {
             Loading.dismissLoading()
             Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
             binding.verifyLin.visibility = View.GONE
             binding.newPasswordLin.visibility = View.VISIBLE
-        }
+        }*/
 
-        userDetailsApiViewModel.errorVerifyOtp.observe(this) {
+        /*userDetailsApiViewModel.errorVerifyOtp.observe(this) {
             Loading.dismissLoading()
             Snackbar.make(this, binding.root, it, Snackbar.LENGTH_SHORT).show()
-        }
+        }*/
 
         userDetailsApiViewModel.passwordChange.observe(this) {
             Loading.dismissLoading()
@@ -129,8 +131,26 @@ class ForgotPassActivity : AppCompatActivity() {
             } else {
                 /*val credential = PhoneAuthProvider.getCredential(otp, enteredOtp)
                 signInWithCredential(credential)*/
-                Loading.showLoading(this)
-                userDetailsApiViewModel.verifyOtp(binding.email.text.toString(), enteredOtp)
+                if (enteredOtp == otp) {
+                    Snackbar.make(
+                        this,
+                        binding.root,
+                        "OTP verified successfully",
+                        Snackbar.LENGTH_SHORT
+                    ).show()
+                    binding.changePassText.text = getString(
+                        R.string.change_password,
+                        "+91 " + binding.phoneNumber.text.toString(),
+                        binding.email.text.toString()
+                    )
+                    binding.verifyLin.visibility = View.GONE
+                    binding.newPasswordLin.visibility = View.VISIBLE
+                } else {
+                    Snackbar.make(this, binding.root, "OTP does not match", Snackbar.LENGTH_SHORT)
+                        .show()
+                }
+                /*Loading.showLoading(this)
+                userDetailsApiViewModel.verifyOtp(binding.email.text.toString(), enteredOtp)*/
             }
         }
 

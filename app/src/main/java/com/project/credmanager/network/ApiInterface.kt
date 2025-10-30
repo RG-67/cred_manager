@@ -68,7 +68,10 @@ interface ApiInterface {
     suspend fun deleteUserCred(@QueryMap map: HashMap<String, String>): Response<DeleteUserCredRes>
 
     @GET(ApiConstants.sendOtp)
-    suspend fun sendOtp(@Query("email") email: String): Response<SendOtpRes>
+    suspend fun sendOtp(
+        @Query("email") email: String,
+        @Query("otp") otp: String
+    ): Response<SendOtpRes>
 
     @GET(ApiConstants.verifyOtp)
     suspend fun verifyOtp(

@@ -5,6 +5,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 object ApiClient {
     val apiInterface: ApiInterface by lazy {
@@ -13,6 +14,9 @@ object ApiClient {
         }
 
         val client = OkHttpClient.Builder()
+            .connectTimeout(50, TimeUnit.SECONDS)
+            .readTimeout(50, TimeUnit.SECONDS)
+            .writeTimeout(50, TimeUnit.SECONDS)
             .addInterceptor(logging).build()
 
         val retrofit = Retrofit.Builder()
